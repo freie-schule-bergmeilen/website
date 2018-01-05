@@ -1,23 +1,37 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link';
-//import logo from '../img/logo.svg';
+import logo from '../img/logo.svg';
 import './nav.scss'
 import _ from 'lodash'
 import { css } from 'glamor'
 
 const styles = {
+  nav: css({
+    marginTop: 10,
+    marginBottom: 10,
+  }),
+  navbarEnd: css({
+    marginBottom: 5,
+    marginTop: 5,
+  }),
   brand: css({
-    paddingLeft: 35,
-    // paddingLeft: 65,
-    // backgroundImage: `url(${logo})`,
-    // backgroundRepeat: 'no-repeat',
-    // backgroundPositionX: 10,
-    height: 64,
-    '& > .title': {
-      height: 64,
+    paddingLeft: 75,
+    backgroundImage: `url(${logo})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPositionX: 10,
+    backgroundSize: 'contain',
+    height: 55,
+    '& > h1.title': {
+      height: 60,
       display: 'flex',
       alignItems: 'center',
+      fontSize: '1.9rem !important',
+    },
+    '@media screen and (max-width: 1200px)': {
+      '& > h1.title': {
+        fontSize: '1.75rem !important',
+      }
     },
     '@media screen and (max-width: 500px)': {
       '& > h1.title': {
@@ -26,7 +40,7 @@ const styles = {
     },
     '@media screen and (max-width: 380px)': {
       '& > h1.title': {
-        fontSize: '1.5rem !important',
+        fontSize: '1.4rem !important',
       }
     },
   })
@@ -121,7 +135,7 @@ export default class Nav extends PureComponent {
 
 
     return (
-      <nav className="navbar" style={{ marginTop: '0.75rem'}}>
+      <nav className="navbar" {...styles.nav}>
         { this.renderBrand() }
 
         <div
@@ -130,7 +144,7 @@ export default class Nav extends PureComponent {
             ${isBurgerActive && 'is-active'}`
           }
         >
-          <div className="navbar-end">
+          <div className="navbar-end" {...styles.navbarEnd}>
 
             <div className="navbar-item has-dropdown is-hoverable">
               <div className="navbar-link">
