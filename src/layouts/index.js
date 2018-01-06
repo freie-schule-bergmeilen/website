@@ -56,7 +56,9 @@ export default (
 
     <footer className="footer">
       <div className="container">
-        &copy; { new Date().getFullYear() } Freie Schule Bergmeilen
+        <section className="section">
+            &copy; { new Date().getFullYear() } Freie Schule Bergmeilen
+        </section>
       </div>
     </footer>
 

@@ -73,23 +73,9 @@ a {
 
 .hero .hero-body {
   padding: 2.25rem 1.5rem 1rem 1.5rem;
-
-  .slick-dots li {
-    button:before {
-      color: white;
-    }
-    &.slick-active button:before {
-      color: white;
-    }
-  }
-  .slick-prev {
-    left: -35px;
-  }
-  .slick-next {
-    right: -35px;
-  }
-  .section {
-    padding: 1rem 1.5rem;
+  section {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
   }
 }
 
