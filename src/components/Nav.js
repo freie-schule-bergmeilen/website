@@ -166,6 +166,7 @@ export default class Nav extends PureComponent {
                 Über uns
               </div>
               <div className="navbar-dropdown">
+                <NavLink to="/gallery" text="Fotos"/>
                 <NavLink to="/team" text="Team"/>
                 {renderAddedPages('Über uns')}
               </div>
