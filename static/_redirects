@@ -4,3 +4,5 @@ http://freie-schule-bergmeilen.netlify.com/* http://www.freie-schule-bergmeilen.
 https://freie-schule-bergmeilen.netlify.com/* https://www.freie-schule-bergmeilen.ch/:splat 301!
 http://fsbergmeilen.ch/* http://www.freie-schule-bergmeilen.ch/:splat 301!
 https://fsbergmeilen.ch/* https://www.freie-schule-bergmeilen.ch/:splat 301!
+http://www.fsbergmeilen.ch/* http://www.freie-schule-bergmeilen.ch/:splat 301!
+https://www.fsbergmeilen.ch/* https://www.freie-schule-bergmeilen.ch/:splat 301!
