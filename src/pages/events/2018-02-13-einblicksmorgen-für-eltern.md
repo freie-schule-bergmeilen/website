@@ -4,7 +4,7 @@ templateKey: event
 layout: event
 path: /einblicksmorgen-fuer-eltern
 title: Einblicksmorgen für Eltern
-date: 2018-02-26T09:30:00+01:00
+date: 2018-03-26T09:30:00+02:00
 ---
 Am Einblicksmorgen haben interessierte Eltern Gelegenheit, den Alltag in unserer Schule mitzuerleben. Nach einer kurzen Einführung können Basis- und Primarstufe besucht werden. Im Anschluss gibt es die Möglichkeit, Fragen zu stellen und sich über die Eindrücke auszutauschen.
 
