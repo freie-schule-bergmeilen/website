@@ -2,7 +2,7 @@
 kind: event
 templateKey: event
 layout: event
-path: /einblicksmorgen-fuer-eltern
+path: /einblicksmorgen-fuer-eltern-jan
 title: Einblicksmorgen für Eltern
 date: 2018-01-29T08:30:46.000Z
 ---
