@@ -18,7 +18,7 @@ export default (
   )
   const past = eventNodes.filter(d =>
     new Date(d.node.frontmatter.date) < now
-  )
+  ).reverse()
 
   return (
     <section className="section">
