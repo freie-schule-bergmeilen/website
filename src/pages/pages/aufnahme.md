@@ -30,6 +30,7 @@ Wer an einem Schulplatz interessiert ist, geht folgendermassen vor:
     class="button is-info is-large"
     href="/docs/Schulgeld_Stundenplaene_Reservation.pdf"
     target="_blank"
+    rel="noopener"
    >
     <span class="icon is-medium">
         <i class="fa fa-download"></i>
