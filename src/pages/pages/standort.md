@@ -6,8 +6,9 @@ title: Standort
 section: Über uns
 order: '0'
 ---
-Unser schönes altes Bergschulhaus bietet die perfekte Umgebung für kindgerechtes Lernen. Es liegt mitten in der Natur und ein Waldplatz sowie umliegende Bauernhöfe laden zum Entdecken und Erforschen ein.
+Unser schönes, altes Bergschulhaus befindet sich idyllisch gelegen zwischen dem Zürichsee und dem Pfannenstihl.  Mitten in der Natur bietet es Raum zum Entdecken, sich Bewegen, Spielen und Verweilen. 
 
+Unser Waldplatz, sowie umliegende Bauernhöfe, bieten uns zusätzlichen Bewegungs-und Entdeckungsraum.
 
 Unser Schulhaus liegt an der Toggwilerstrasse in Meilen:
 
@@ -20,9 +21,8 @@ Unser Schulhaus liegt an der Toggwilerstrasse in Meilen:
  
  
 <p>
-Mit dem Auto vom Bahnhof Meilen in 7 Minuten erreichbar.
+Mit dem Auto sind wir vom Bahnhof Meilen in 7 Minuten erreichbar.
 </p> 
-
 
 <p>
   <iframe
@@ -34,5 +34,5 @@ Mit dem Auto vom Bahnhof Meilen in 7 Minuten erreichbar.
 </p>
 
 <p>
-Mit öffentlichen Verkehrsmittel erreicht man unser Schulhaus mit der Buslinie 922 vom Bahnhof Meilen bis zur Haltestelle Bezibüel/Chilchbüel (9 Minuten Busfahrt), danach führt ein Fussweg (ca.10 Minuten) zum Schulhaus.
+Mit den öffentlichen Verkehrsmitteln erreicht man unser Schulhaus mit der Buslinie 922 vom Bahnhof Meilen bis zur Haltestelle Bezibüel/Chilchbüel (9 Minuten Busfahrt). Ein Fussweg (ca.10 Minuten) führt zum Schulhaus.
 </p>
