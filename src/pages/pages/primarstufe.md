@@ -6,4 +6,16 @@ title: Primarstufe
 section: Angebot
 order: '0'
 ---
-Unsere Primarschüler gestalten den Grossteil ihrer Lernzeit selber. Dabei werden sie von unserem Team achtsam begleitet und unterstützt. Freiwillige Angebote zu einzelnen Lernzielen oder Fächern (Klassische Schulfächer, Werken, Musik, Malen,…) ergänzen das Freie Lernen und werden den jeweiligen Bedürfnissen der Schüler angepasst. Ausflüge und Projekttage machen Lernstoff erlebbar und bleiben in Erinnerung. Wald und Garten, sowie die Umgebung des Schulhauses bieten uns vielfältige Anregung zum Lernen und Entdecken. Längerfristig ist eine Oberstufe in Planung, gerne vermitteln wir auch an befreundete Schulen, um eine gute Lösung für jeden Schüler/ jede Schülerin zu finden.
+Auf der Primarstufe ist das Spiel immer noch ein wichtiger Teil im Lernalltag. In selber gestalteten Spielsituationen wird gerechnet, geschrieben, verhandelt, gewogen, diskutiert, kreiiert und nach Lösungen gesucht. 
+
+Die Lernbegleiter begleiten und unterstützen das Kind seinen Interessen und Stärken zu folgen, sich in selbstgewählte Lerninhalte zu vertiefen und sich Kompetenzen zu erwerben, welche seiner Reife entsprechen. Wo immer möglich gewähren wir dem Kind Lösungen selbst zu finden, Konflikte selber zu lösen, Antworten auf Fragen selber zu finden. Wir helfen da, wo es Hilfe braucht, im Sinne von "hilf mir es selbst zu tun". Ist ein Kind oder eine Gruppe von Kindern mitten in einem wichtigen Lernprozess halten wir uns zurück und greifen nach Möglichkeit nicht ein. Es gibt genügend andere Gelegenheiten mit den Kindern Beziehung zu pflegen und sie im Lernen zu begleiten. 
+
+In der vielfältig gestalteten Lernlandschaft begegnet das Kind diversen Materialien, welche es für das Erwerben sämtlicher Kompetenzen braucht. Darin enthalten sind auch Montessori-Lernmaterialien und die offiziellen Lehrmittel des Kt.Zürich.
+
+Zusätzlich bereichern Sternschnuppenangebote unsern Lernalltag. Dies sind Angebote in verschiedenen Bereichen wie Werken, Experimentieren, Programmieren, Sprachen lernen oder auch Kochen. Für diese Angebote laden wir eine Fachpersonen ein, welche uns ihr Wissensgebiet näher bringt und uns mit ihrer Begeisterung für ihr Gebiet anstecken kann. 
+
+Auch Ausflüge und Projekttage sind wichtige Elemente innerhalb des Schuljahres. Wir beziehen die Kinder bei der Auswahl und Planung mit ein.
+
+Bei uns gibt es keine Pausen. Die Kinder haben jederzeit die Möglichkeit nach draussen zu gehen und ihrem Bedürfnis nach Bewegung gerecht zu werden. 
+
+Längerfristig ist eine Oberstufe in Planung. Gerne vermitteln wir auch an befreundete Schulen, um eine gute Lösung für jeden Schüler/ jede Schülerin zu finden.
