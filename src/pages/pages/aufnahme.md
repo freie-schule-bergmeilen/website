@@ -17,7 +17,7 @@ und zu überlegen, ob die FREIE Schule Bergmeilen die passende Schule für Kind 
 
 Interessierte Eltern erhalten nach der Platzreservation detaillierte Informationen und Vertragsbedingungen zur Ansicht. Fragen dazu können per Email oder telefonisch geklärt werden. Mit einer Platzreservation ist ein wichtiger Schritt im Entscheidungsprozess getan. Die Reservation ist kostenlos und unverbindlich.
 
-**Schnuppertag(e) vereinbaren.**
+**Schnupperwoche vereinbaren.**
 
 Die Schnuppertage ermöglichen ein gegenseitiges Kennenlernen. Uns ist es wichtig, dass das Kind alle Lernbegleiter und die anderen Kinder erleben, die Lernumgebung erkunden, und erste Eindrücke in unserem Lernalltag sammeln kann. Es gilt herauszufinden, ob sich das Kind bei uns wohl und aufgehoben fühlt, das freie Lernen seiner Persönlichkeit entspricht und wir die passende Schule für das Kind und seine Eltern sind.
 
@@ -31,8 +31,6 @@ Im Anmeldegespräch werden gegenseitige Erwartungen geklärt und
 die persönlichen Bedürfnisse des Kindes/der Familie besprochen. Erst wenn das
 Bauchgefühl auf allen Seiten stimmt und alle Fragen geklärt sind, wird ein Vertrag
 unterschrieben. 
-
-
 
 **Ein Einstieg in unsere Schule ist auch während dem laufenden Schuljahr möglich.**
 
