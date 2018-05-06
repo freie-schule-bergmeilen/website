@@ -19,11 +19,27 @@ const styles = {
     outer: css({
       display: 'flex',
       textAlign: 'center',
+      justifyContent: 'center',
       flexBasis: 0,
       flexGrow: 1,
       marginBottom: '5rem',
       minWidth: '13rem',
       maxWidth: '20rem',
+      padding: 10,
+      border: '1px solid #fff',
+      '& .extras': {
+        maxHeight: 0,
+        overflow: 'hidden',
+        transition: 'max-height 0.5s ease-out',
+      },
+      '&:hover': {
+        border: '1px solid #ccc',
+        boxShadow: '0 2px 3px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1)',
+        borderRadius: 5,
+        '& .extras': {
+          maxHeight: 1000,
+        },
+      }
     }),
     content: css({
       display: 'flex',
@@ -39,7 +55,7 @@ const styles = {
       flexDirection: 'column',
     }),
     name: css({
-      fontSize: '1.5rem',
+      fontSize: '1.2rem',
       lineHeight: '1.65rem',
       // fontWeight: 'bold',
       fontFamily: 'Fresca',
@@ -47,7 +63,7 @@ const styles = {
       color: '#346',
     }),
     position: css({
-      fontSize: '0.9rem',
+      fontSize: '0.8rem',
       marginBottom: '.5rem',
       fontWeight: 'bold',
     }),
@@ -121,19 +137,21 @@ const TeamMember = ({
                 <div {...styles.teamMember.name}>{name}</div>
                 <div {...styles.teamMember.position}>{ position }</div>
               </div>
-              <div>
-                <div {...styles.teamMember.experience}>
-                { experience }
+              <div className="extras">
+                <div>
+                  <div {...styles.teamMember.experience}>
+                  { experience }
+                  </div>
                 </div>
-              </div>
-              {!_.isEmpty(children) &&
-              <div>
-                <div {...styles.teamMember.kids.title}>
-                  Kinder: {children.map(({ name, year }) => `${name}, ${year}`).join(', ')}
+                {!_.isEmpty(children) &&
+                <div>
+                  <div {...styles.teamMember.kids.title}>
+                    Kinder: {children.map(({ name, year }) => `${name}, ${year}`).join(', ')}
+                  </div>
                 </div>
+                }
+                { /* bio */ }
               </div>
-              }
-              { /* bio */ }
             </div>
           </div>
         </div>
