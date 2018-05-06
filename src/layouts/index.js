@@ -3,6 +3,7 @@ import Nav from '../components/Nav'
 import Helmet from 'react-helmet';
 import '../styles/styles.scss'
 import Carousel from '../components/Carousel'
+import Link from 'gatsby-link'
 
 
 export default (
@@ -54,10 +55,32 @@ export default (
 
     <div className="container">{children()}</div>
 
-    <footer className="footer">
+    <footer className="footer" style={{ padding: 0 }}>
       <div className="container">
         <section className="section">
-            &copy; { new Date().getFullYear() } Freie Schule Bergmeilen
+          <div className="columns">
+
+            <div className="column is-6">
+              <small>
+              &copy; { new Date().getFullYear() } Freie Schule Bergmeilen
+              </small>
+            </div>
+
+            <div className="column is-3">
+              <h4>E-Mail</h4>
+              <small>
+              <a href="mailto:fsbergmeilen@gmx.net">fsbergmeilen@gmx.net</a>
+              </small>
+            </div>
+            <div className="column is-3">
+              <h4>Kontaktadresse</h4>
+              <small>
+              Freie Schule Bergmeilen<br/>
+              Toggwilerstrasse 154<br/>
+              8706 Meilen<br/>
+              </small>
+            </div>
+          </div>
         </section>
       </div>
     </footer>
