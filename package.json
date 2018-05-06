@@ -4,24 +4,24 @@
   "version": "1.0.0",
   "author": "Ilya Boyandin <ilya@boyandin.me>",
   "dependencies": {
-    "bulma": "^0.6.0",
-    "gatsby": "^1.9.149",
-    "gatsby-image": "^1.0.21",
-    "gatsby-link": "^1.6.21",
-    "gatsby-plugin-glamor": "^1.6.8",
-    "gatsby-plugin-google-analytics": "^1.0.11",
+    "bulma": "^0.6.2",
+    "gatsby": "^1.9.259",
+    "gatsby-image": "^1.0.51",
+    "gatsby-link": "^1.6.44",
+    "gatsby-plugin-glamor": "^1.6.13",
+    "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-react-helmet": "^1.0.5",
-    "gatsby-plugin-sass": "^1.0.12",
+    "gatsby-plugin-sass": "^1.0.26",
     "gatsby-plugin-sharp": "^1.6.21",
-    "gatsby-remark-copy-linked-files": "^1.5.20",
-    "gatsby-remark-images": "^1.5.31",
-    "gatsby-source-filesystem": "^1.5.8",
-    "gatsby-transformer-remark": "^1.7.17",
-    "gatsby-transformer-sharp": "^1.6.13",
-    "react-images": "^0.5.14",
+    "gatsby-remark-copy-linked-files": "^1.5.32",
+    "gatsby-remark-images": "^1.5.63",
+    "gatsby-source-filesystem": "^1.5.35",
+    "gatsby-transformer-remark": "^1.7.40",
+    "gatsby-transformer-sharp": "^1.6.24",
+    "react-images": "^0.5.17",
     "react-measure": "^2.0.2",
-    "react-photo-gallery": "^6.0.22",
-    "react-responsive-carousel": "^3.1.30"
+    "react-photo-gallery": "^6.0.25",
+    "react-responsive-carousel": "^3.1.37"
   },
   "keywords": [
     "gatsby"
@@ -36,6 +36,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.7.4"
+    "prettier": "^1.12.1"
   }
 }
