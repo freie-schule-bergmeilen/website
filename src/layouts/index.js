@@ -73,7 +73,7 @@ export default (
               </small>
             </div>
             <div className="column is-3">
-              <h4>Kontaktadresse</h4>
+              <h4>Adresse</h4>
               <small>
               Freie Schule Bergmeilen<br/>
               Toggwilerstrasse 154<br/>
