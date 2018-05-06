@@ -124,7 +124,7 @@ export default class Nav extends PureComponent {
 
 
     return (
-      <nav className="navbar" style={{ marginTop: '0.75rem'}}>
+      <nav className="navbar">
         { this.renderBrand() }
 
         <div
