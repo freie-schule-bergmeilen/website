@@ -46,11 +46,11 @@ h3 {
   font-size: 1.1rem;
   h1.title {
     font-weight: bold;
-    color: $color-primary-1;
+    color: $color-primary-0;
     font-size: 2rem;
   }
   a.navbar-item {
-    color: $color-primary-2;
+    color: $color-primary-0;
     font-weight: bold;
     &:hover {
       color: $color-primary-3;
@@ -64,6 +64,9 @@ h3 {
 
 a {
   color: $primary;
+  &:hover {
+    color: $color-primary-3;
+  }
 }
 
 .container {
