@@ -15,9 +15,13 @@ $info: $color-primary-1;
 html, body {
   font-family: 'Open Sans', sans-serif;
 }
-
 h1, h2, h3, h4 {
   font-family: 'Fresca', sans-serif;
+}
+.content {
+  h1, h2, h3, h4 {
+    font-weight: normal;
+  }
 }
 
 .title {
