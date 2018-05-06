@@ -3,6 +3,7 @@ import _ from 'lodash'
 import { css } from 'glamor'
 import EventsList from '../components/EventsList'
 import GoalsList from '../components/GoalsList'
+import Link from 'gatsby-link'
 
 
 const styles = {
@@ -39,7 +40,7 @@ const EventsColumn = ({ eventsRemarks, numItemsToShow }) => {
       className="column"
       {...styles.aktuelles}
     >
-      <h2 className="title">Veranstaltungen</h2>
+      <h2 className="title"><Link to="/events">Veranstaltungen</Link></h2>
       <EventsList events={events}/>
     </div>
   )
@@ -59,7 +60,7 @@ export default (
       {...styles.columns}
     >
       <div className="column">
-        <h2 className="title">{goals.title}</h2>
+        <h2 className="title"><Link to="/goals">{goals.title}</Link></h2>
         <div className="content">
           <GoalsList {...goals} />
         </div>

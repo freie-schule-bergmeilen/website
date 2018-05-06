@@ -26,21 +26,37 @@ const styles = {
     // },
     marginRight: '.6rem',
   }),
+  title: {
+    outer: css({
+      display: 'flex',
+    }),
+    text: css({
+      lineHeight: '1.2em',
+    }),
+  }
 }
 
 
-const GoalsList = ({ goals }) =>
+const GoalsList = ({ goals, expand = false }) =>
   <div {...styles.outer}>
     {
       goals.map(({ title, description }) =>
         <div key={title}>
           <h4>
-            <span {...styles.icon}>
-              <i className="fa fa-star"></i>
-            </span>
-            { title }
+            <div {...styles.title.outer}>
+              <span {...styles.icon}>
+                <i className="fa fa-star"></i>
+              </span>
+              <div {...styles.title.text}>
+              { title }
+              </div>
+            </div>
           </h4>
-          { description }<br/><br/>
+          { expand &&
+          <div>
+            { description }<br/><br/>
+          </div>
+          }
         </div>
       )
     }

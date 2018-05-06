@@ -16,7 +16,7 @@ export default (
     </Helmet>
     <h2 className="title is-size-3">{goals.title}</h2>
     <div className="content">
-      <GoalsList goals={goals.goals} />
+      <GoalsList goals={goals.goals} expand={true} />
     </div>
   </section>
 
