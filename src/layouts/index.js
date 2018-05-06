@@ -105,7 +105,7 @@ export const query = graphql`
       edges {
         node {
           ... on ImageSharp {
-            sizes(maxHeight:350, quality: 90, cropFocus: ENTROPY) {
+            sizes(maxHeight:320, quality: 90, cropFocus: CENTER) {
               ...GatsbyImageSharpSizes
             }
           }
