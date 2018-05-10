@@ -14,10 +14,9 @@ order: '0'
 
 ## Telefon
 
-Montag und Dienstag von 8.30 bis 11.30, Irene Pfänninger
+Montag und Dienstag von 8.30 bis 11.30, Irene Pfenninger
 
 <a href="tel:079 697 48 01">079 697 48 01</a> 
-
 
 Donnerstag von 8-10 Uhr, Martina Kunz
 
