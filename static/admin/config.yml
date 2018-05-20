@@ -45,15 +45,15 @@ collections:
   - name: special-pages
     label: Spezielle Seiten
     files:
-      - file: "src/pages/team2.md"
-        label: "Team2"
-        name: "team2"
+      - file: "src/team.md"
+        label: "Team"
+        name: "team"
         fields:
           - {label: "Template", name: "templateKey", widget: "hidden", default: "page"}
           - {label: "Pfad", name: "path", widget: "hidden", default: "/team2"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - name: members
+          - name: teamMembers
             label: Mitglieder
             widget: list
             fields:
@@ -71,7 +71,7 @@ collections:
               - {name: order, label: Position, widget: number, default: 0}
               - {name: body, widget: hidden, default: ""}
 
-      - file: "src/pages/gallery.md"
+      - file: "src/gallery.md"
         label: "Fotos"
         name: "gallery"
         fields:
@@ -87,26 +87,26 @@ collections:
               - {name: image, label: Foto, widget: image, required: true, class: "gallery"}
 
 
-  - name: team
-    label: Team
-    folder: "src/pages/team"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {name: dataKind, widget: hidden, default: "team-member"}
-      - {name: title, label: Name}
-      - {name: position, label: "Funktion an der Schule"}
-      - {name: experience, label: "Ausbildung/Berufserfahrung", required: false}
-      - {name: image, label: Foto, widget: image, required: false, class: "team"}
-      - name: children
-        label: Kinder
-        widget: list
-        required: false
-        fields:
-          - {label: Name, name: name, widget: string}
-          - {label: Year, name: year, widget: string}
-      - {name: order, label: Position, widget: number, default: 0}
-      - {name: body, widget: hidden, default: ""}
+#  - name: team
+#    label: Team
+#    folder: "src/pages/team"
+#    create: true
+#    slug: "{{slug}}"
+#    fields:
+#      - {name: dataKind, widget: hidden, default: "team-member"}
+#      - {name: title, label: Name}
+#      - {name: position, label: "Funktion an der Schule"}
+#      - {name: experience, label: "Ausbildung/Berufserfahrung", required: false}
+#      - {name: image, label: Foto, widget: image, required: false, class: "team"}
+#      - name: children
+#        label: Kinder
+#        widget: list
+#        required: false
+#        fields:
+#          - {label: Name, name: name, widget: string}
+#          - {label: Year, name: year, widget: string}
+#      - {name: order, label: Position, widget: number, default: 0}
+#      - {name: body, widget: hidden, default: ""}
 
 #          - {name: name, label: Name}
 #          - {name: position, label: "Funktion and der Schule"}

@@ -32,19 +32,29 @@ exports.onCreateNode = ({
   const { frontmatter } = node
   if (frontmatter) {
     const adjust = adjustImagePath(node.fileAbsolutePath)
+
     const { image } = frontmatter
     if (image) {
       node.frontmatter.image = adjust(image)
     }
+
     const { images } = frontmatter
     if (images) {
       images.forEach(obj => {
         obj.image = adjust(obj.image)
       })
     }
+
     const { carousel } = frontmatter
     if (carousel) {
       carousel.forEach(obj => {
+        obj.image = adjust(obj.image)
+      })
+    }
+
+    const { teamMembers } = frontmatter
+    if (teamMembers) {
+      teamMembers.forEach(obj => {
         obj.image = adjust(obj.image)
       })
     }
@@ -57,8 +67,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] },
-        filter: { frontmatter: { dataKind: { eq:null } }} 
+        sort: { order: DESC, fields: [frontmatter___date] }
       ) {
         edges {
           node {

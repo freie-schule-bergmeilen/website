@@ -83,33 +83,6 @@ const styles = {
 }
 
 
-export default (
-  {
-    data: {
-      teamMembers: {
-        edges: members
-      }
-    }
-  }
-) =>
-  <section className="section">
-    <Helmet>
-      <title>Team</title>
-    </Helmet>
-    <h2 className="title is-size-3 is-bold-light">Team</h2>
-    <div className="column">
-      <div {...styles.teamMembers}>
-        {members.map(
-          ({  node: {
-              id,
-              frontmatter
-            }}, i) => <TeamMember key={i} {...frontmatter} />)}
-      </div>
-    </div>
-  </section>
-
-
-
 const TeamMember = ({
   name,
   image,
@@ -162,46 +135,59 @@ const TeamMember = ({
 
 
 
-export const pageQuery = graphql`
-  query TeamQuery {
+export default function Template({ data }) {
+  const {
+    markdownRemark: {
+      frontmatter: {
+        teamMembers
+      }
+    }
+  } = data
+  console.log(data)
+  return (
+    <section className="section">
+      <Helmet>
+        <title>Team</title>
+      </Helmet>
+      <h2 className="title is-size-3 is-bold-light">Team</h2>
+      <div className="column">
+        <div {...styles.teamMembers}>
+          {teamMembers.map(
+            (member, i) => <TeamMember key={i} {...member} />)}
+        </div>
+      </div>
+    </section>
+  )
+}
 
-    teamMembers: allMarkdownRemark(
-      filter: {frontmatter: {dataKind: {eq: "team-member"}}},
-      sort: {order: ASC, fields: [frontmatter___order]} 
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            name: title
-            image {
-              childImageSharp {
-               resolutions(width: 160, height: 160, quality: 90, cropFocus: CENTER) {
-                 ...GatsbyImageSharpResolutions
-               }
-              }
+
+
+export const pageQuery = graphql`
+  query TeamByPath($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
+      html
+      frontmatter {
+        path
+        title
+        teamMembers {
+          name: title
+          image {
+            childImageSharp {
+             resolutions(width: 160, height: 160, quality: 90, cropFocus: CENTER) {
+               ...GatsbyImageSharpResolutions
+             }
             }
-            position
-            experience
-            children {
-              name
-              year
-            }
+          }
+          position
+          experience
+          children {
+            name
+            year
           }
         }
       }
     }
-    
   }
 `;
 
 
-// image {
-//   childImageSharp {
-//     responsiveSizes(maxWidth: 400) {
-//       src
-//       srcSet
-//       sizes
-//     }
-//   }
-// }
