@@ -89,7 +89,8 @@ collections:
             required: true
             fields:
               - {name: image, label: Foto, widget: image, required: true, class: "gallery"}
-
+        editor:
+           preview: false
 
 #  - name: team
 #    label: Team
