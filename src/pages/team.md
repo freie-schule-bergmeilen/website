@@ -20,7 +20,6 @@ teamMembers:
     children:
       - name: Navin
         year: '2012'
-    order: 0
 
   - title: Karin Escher
     positionType: Schulleitung
@@ -32,7 +31,6 @@ teamMembers:
         year: '2012'
       - name: Louis
         year: '2015'
-    order: 0
 
   - title: Martina Kunz Guggenbühl
     positionType: Schulleitung
@@ -52,7 +50,6 @@ teamMembers:
         year: '2006'
       - name: Kerim
         year: '2008'
-    order: '98'
 
   - title: Michael Guggenbühl
     positionType: Schulleitung
@@ -69,5 +66,4 @@ teamMembers:
         year: '2006'
       - name: Kerim
         year: '2008'
-    order: '99'
 ---

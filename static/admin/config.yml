@@ -72,7 +72,6 @@ collections:
                 fields:
                   - {label: Name, name: name, widget: string}
                   - {label: Year, name: year, widget: string}
-              - {name: order, label: Reihenfolge, widget: number, default: 0}
               - {name: body, widget: hidden, default: ""}
 
       - file: "src/pages/gallery.md"
