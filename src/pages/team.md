@@ -3,7 +3,7 @@ templateKey: team
 path: /team
 title: Team
 teamGroups:
-  - intro: lorem ipsum
+  - intro: ''
     positionType: Schulleitung
     teamMembers:
       - children:
