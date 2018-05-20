@@ -45,7 +45,7 @@ collections:
   - name: special-pages
     label: Spezielle Seiten
     files:
-      - file: "src/team.md"
+      - file: "src/pages/team.md"
         label: "Team"
         name: "team"
         fields:
@@ -59,6 +59,11 @@ collections:
             fields:
               - {name: title, label: Name}
               - {name: position, label: "Funktion an der Schule"}
+              - label: Stellentyp
+                name: positionType
+                widget: select
+                options: ["Schulleitung", "Team"]
+                default: "Team"
               - {name: experience, label: "Ausbildung/Berufserfahrung", required: false}
               - {name: image, label: Foto, widget: image, required: false, class: "team"}
               - name: children
@@ -68,10 +73,10 @@ collections:
                 fields:
                   - {label: Name, name: name, widget: string}
                   - {label: Year, name: year, widget: string}
-              - {name: order, label: Position, widget: number, default: 0}
+              - {name: order, label: Reihenfolge, widget: number, default: 0}
               - {name: body, widget: hidden, default: ""}
 
-      - file: "src/gallery.md"
+      - file: "src/pages/gallery.md"
         label: "Fotos"
         name: "gallery"
         fields:

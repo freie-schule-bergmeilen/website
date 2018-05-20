@@ -4,7 +4,8 @@ path: /team
 title: Team
 teamMembers:
   - title: Irene Pfenninger
-    position: 'Schulleitung, Begleitung im Schulalltag'
+    positionType: Schulleitung
+    position: 'Begleitung im Schulalltag'
     experience: >-
       Sozialpädagogin (HF Agogis), langjährige Berufserfahrung mit Kindern und
       Jugendlichen mit herausforderndem Verhalten
@@ -15,7 +16,8 @@ teamMembers:
     order: 0
 
   - title: Karin Escher
-    position: 'Schulleitung, Begleitung im Schulalltag'
+    positionType: Schulleitung
+    position: 'Begleitung im Schulalltag'
     experience: ' Spielgruppenleiterin Zertifikat SSLV, Drogistin HF mit mehrjähriger Erfahrung im praxisnahen Unterrichten von Berufsschülern (überbetriebliche Kurse Drogisten)'
     image: /img/karin.jpg
     children:
@@ -26,7 +28,8 @@ teamMembers:
     order: 0
 
   - title: Martina Kunz Guggenbühl
-    position: 'Schulleitung, Lernbegleiterin im Schulalltag'
+    positionType: Schulleitung
+    position: 'Lernbegleiterin im Schulalltag'
     experience: >-
       Primarlehrerin, Tanz- und Bewegungspädagogin, Lern- und
       Entwicklungsbegleiterin, rituelle Singgruppenleiterin, Weiterbildung in
@@ -45,8 +48,9 @@ teamMembers:
     order: '98'
 
   - title: Michael Guggenbühl
+    positionType: Schulleitung
     position: >-
-      Schulleitung, Lernbegleiter im Schulalltag, Technik, Infrastruktur und
+      Lernbegleiter im Schulalltag, Technik, Infrastruktur und
       Umgebungspflege
     image: /img/michael-2.jpg
     experience: >-
