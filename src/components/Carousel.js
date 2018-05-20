@@ -6,32 +6,43 @@ import styles from 'react-responsive-carousel/lib/styles/carousel.min.css'
 import _ from 'lodash'
 
 
-export default ({ images }) =>
-  <div style={{
-    margin: '0 22px',
-  }}>
-    <Carousel
-      showStatus={false}
-      showThumbs={false}
-      infiniteLoop={true}
-      autoPlay={true}
-      interval={10000}
-      transitionTime={1000}
-    >
-      {_.sortBy(images, 'node.sizes.src')
-        .map(({ node: { sizes }}) =>
-        <figure
-          key={sizes.src}
-          className="image"
-        >
-          <Img
-            sizes={sizes}
-            style={{
-              minHeight: 200,
-            }}
-          />
-        </figure>
+const Image = ({ sizes }) =>
+  <figure
+    key={sizes.src}
+    className="image"
+  >
+    <Img
+      sizes={sizes}
+      style={{
+        minHeight: 200,
+      }}
+    />
+  </figure>
 
-      )}
-    </Carousel>
-  </div>
+export default ({ images }) => {
+  if (_.isEmpty(images)) {
+    return null
+  }
+  return (
+    <div style={{
+      margin: '0 22px',
+    }}> {
+      images.length > 1 ?
+        <Carousel
+          showStatus={false}
+          showThumbs={false}
+          infiniteLoop={true}
+          autoPlay={true}
+          interval={5000}
+          transitionTime={750}
+        >
+          {_.sortBy(images, 'sizes.src')
+            .map(({ sizes }, i) => <Image key={i} sizes={sizes}/>)
+          }
+        </Carousel>
+      :
+        <Image sizes={_.first(images).sizes} />
+    }
+    </div>
+  )
+}

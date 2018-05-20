@@ -38,7 +38,13 @@ exports.onCreateNode = ({
     }
     const { images } = frontmatter
     if (images) {
-      node.frontmatter.images.forEach(obj => {
+      images.forEach(obj => {
+        obj.image = adjust(obj.image)
+      })
+    }
+    const { carousel } = frontmatter
+    if (carousel) {
+      carousel.forEach(obj => {
         obj.image = adjust(obj.image)
       })
     }

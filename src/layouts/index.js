@@ -3,91 +3,118 @@ import Nav from '../components/Nav'
 import Helmet from 'react-helmet';
 import '../styles/styles.scss'
 import Carousel from '../components/Carousel'
-import Link from 'gatsby-link'
+import { isEmpty } from 'lodash'
 
 
 export default (
   {
     children,
     data: {
-      site: { siteMetadata: { title, hero, meta } },
-      carouselImages,
-      heroRemark,
+      site: { siteMetadata: { title, homeHero, meta } },
+      homeCarouselImages,
       pages
     },
     ...props
-  }) => (
+  }) => {
+  const currentPage = pages.edges.find(
+    ({ node }) => node.frontmatter.path === props.location.pathname
+  )
 
-  <div>
-    <Helmet>
-      <title>{title}</title>
-      <meta name="description" content={ meta.description } />
-      <meta name="keywords" content={ meta.keywords } />
-    </Helmet>
+  let carouselImages = []
+  let hero
+  if (props.location.pathname === '/') {
+    // HOME
+    carouselImages = homeCarouselImages.edges.map(
+      ({ node }) => node
+    )
+    hero = homeHero
+  } else
+  if (currentPage) {
+    // GENERIC PAGE
+    const { frontmatter } = currentPage.node
+    const { carousel } = frontmatter
+    if (!isEmpty(carousel)) {
+      carouselImages = carousel.map(
+        ({ image: { childImageSharp } }) => childImageSharp
+      )
+    }
+    hero = frontmatter.hero
+  }
+  return (
+    <div>
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={meta.description}/>
+        <meta name="keywords" content={meta.keywords}/>
+      </Helmet>
 
-    <div className="container">
-      <Nav
-        title={title}
-        pages={pages.edges.map(
-          ({ node: { frontmatter }}) => frontmatter
-        )}
-      />
-    </div>
+      <div className="container">
+        <Nav
+          title={title}
+          pages={pages.edges.map(
+            ({ node: { frontmatter } }) => frontmatter
+          )}
+        />
+      </div>
 
-    <section className="hero is-info is-bold">
-      <div className="hero-body">
-        <div className="container">
-        { props.location.pathname === '/' &&
-          <Carousel images={carouselImages.edges}/>
-        }
+      <section className="hero is-info is-bold">
+        <div className="hero-body">
+          <div className="container">
+            {!isEmpty(carouselImages) &&
+            <Carousel images={carouselImages}/>
+            }
+          </div>
+          {
+            hero ?
+              <div className="container">
+                <section className="section">
+                  <h1 className="title">{hero.title}</h1>
+                  <div className="content">{hero.text}</div>
+                </section>
+              </div>
+            :
+              <div style={{ padding: 10 }} />
+          }
         </div>
-        {props.location.pathname === '/' &&
+      </section>
+
+
+      <div className="container">{children()}</div>
+
+      <footer className="footer" style={{ padding: 0 }}>
         <div className="container">
           <section className="section">
-            <h1 className="title">{hero.title}</h1>
-            <div className="content">{hero.text}</div>
+            <div className="columns">
+
+              <div className="column is-6">
+                <small>
+                  &copy; {new Date().getFullYear()} Freie Schule Bergmeilen
+                </small>
+              </div>
+
+              <div className="column is-3">
+                <h4>E-Mail</h4>
+                <small>
+                  <a href="mailto:fsbergmeilen@gmx.net">fsbergmeilen@gmx.net</a>
+                </small>
+              </div>
+              <div className="column is-3">
+                <h4>Adresse</h4>
+                <small>
+                  Freie Schule Bergmeilen<br/>
+                  Toggwilerstrasse 154<br/>
+                  8706 Meilen<br/>
+                </small>
+              </div>
+            </div>
           </section>
         </div>
-        }
-      </div>
-    </section>
+      </footer>
 
 
-    <div className="container">{children()}</div>
-
-    <footer className="footer" style={{ padding: 0 }}>
-      <div className="container">
-        <section className="section">
-          <div className="columns">
-
-            <div className="column is-6">
-              <small>
-              &copy; { new Date().getFullYear() } Freie Schule Bergmeilen
-              </small>
-            </div>
-
-            <div className="column is-3">
-              <h4>E-Mail</h4>
-              <small>
-              <a href="mailto:fsbergmeilen@gmx.net">fsbergmeilen@gmx.net</a>
-              </small>
-            </div>
-            <div className="column is-3">
-              <h4>Adresse</h4>
-              <small>
-              Freie Schule Bergmeilen<br/>
-              Toggwilerstrasse 154<br/>
-              8706 Meilen<br/>
-              </small>
-            </div>
-          </div>
-        </section>
-      </div>
-    </footer>
-
-
-  </div>
-)
+    </div>
+  )
+}
 
 
 export const query = graphql`
@@ -99,7 +126,7 @@ export const query = graphql`
           keywords
           description
         }
-        hero {
+        homeHero: hero {
           title
           text
         }
@@ -119,12 +146,21 @@ export const query = graphql`
             path
             title
             section
+            carousel {
+              image {
+                childImageSharp {
+                 sizes(maxHeight:320, quality: 90, cropFocus: CENTER) {
+                   ...GatsbyImageSharpSizes
+                 }
+                }
+              }
+            }
           }
         }
       }
     }
-
-    carouselImages: allImageSharp(filter: { id:{ regex: "/carousel/"}}) {
+    
+    homeCarouselImages: allImageSharp(filter: { id:{ regex: "/carousel/"}}) {
       edges {
         node {
           ... on ImageSharp {
