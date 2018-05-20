@@ -134,28 +134,47 @@ const TeamMember = ({
 }
 
 
+const PositionTypeMembers = ({ type, intro, members }) =>
+  !_.isEmpty(members) &&
+  <div>
+    <h2 className="title is-size-3 is-bold-light">{type}</h2>
+    {intro && <div>{intro.text}</div>}
+    <div className="column">
+      <div {...styles.teamMembers}>
+        {members.map(
+          (member, i) => <TeamMember key={i} {...member} />)}
+      </div>
+    </div>
+  </div>
 
 export default function Template({ data }) {
   const {
     markdownRemark: {
       frontmatter: {
+        teamIntros,
         teamMembers
       }
     }
   } = data
-  console.log(data)
+
+  const teamIntrosByType = _.groupBy(teamIntros, 'positionType')
+  const teamMembersByType = _.groupBy(teamMembers, 'positionType')
   return (
     <section className="section">
       <Helmet>
         <title>Team</title>
       </Helmet>
-      <h2 className="title is-size-3 is-bold-light">Team</h2>
-      <div className="column">
-        <div {...styles.teamMembers}>
-          {teamMembers.map(
-            (member, i) => <TeamMember key={i} {...member} />)}
-        </div>
-      </div>
+
+      <PositionTypeMembers
+        type="Schulleitung"
+        intro={_.first(teamIntrosByType["Schulleitung"])}
+        members={teamMembersByType["Schulleitung"]}
+      />
+      <PositionTypeMembers
+        type="Team"
+        intro={_.first(teamIntrosByType["Team"])}
+        members={teamMembersByType["Team"]}
+      />
     </section>
   )
 }
@@ -169,8 +188,13 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+        teamIntros {
+          positionType
+          text          
+        }
         teamMembers {
           name: title
+          positionType
           image {
             childImageSharp {
              resolutions(width: 160, height: 160, quality: 90, cropFocus: CENTER) {

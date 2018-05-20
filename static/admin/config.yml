@@ -52,7 +52,6 @@ collections:
           - {label: "Template", name: "templateKey", widget: "hidden", default: "page"}
           - {label: "Pfad", name: "path", widget: "hidden", default: "/team2"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
           - name: teamMembers
             label: Mitglieder
             widget: list

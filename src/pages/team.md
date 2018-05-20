@@ -2,6 +2,13 @@
 templateKey: team
 path: /team
 title: Team
+
+teamIntros:
+  - positionType: Schulleitung
+    text: >-
+  - positionType: Team
+    text: >-
+
 teamMembers:
   - title: Irene Pfenninger
     positionType: Schulleitung
