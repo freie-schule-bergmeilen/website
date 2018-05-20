@@ -134,11 +134,11 @@ const TeamMember = ({
 }
 
 
-const PositionTypeMembers = ({ type, intro, members }) =>
+const TeamGroup = ({ type, intro, members }) =>
   !_.isEmpty(members) &&
   <div>
     <h2 className="title is-size-3 is-bold-light">{type}</h2>
-    {intro && <div>{intro.text}</div>}
+    {intro && <div>{intro}</div>}
     <div className="column">
       <div {...styles.teamMembers}>
         {members.map(
@@ -151,30 +151,26 @@ export default function Template({ data }) {
   const {
     markdownRemark: {
       frontmatter: {
-        teamIntros,
-        teamMembers
+        teamGroups
       }
     }
   } = data
 
-  const teamIntrosByType = _.groupBy(teamIntros, 'positionType')
-  const teamMembersByType = _.groupBy(teamMembers, 'positionType')
   return (
     <section className="section">
       <Helmet>
         <title>Team</title>
       </Helmet>
-
-      <PositionTypeMembers
-        type="Schulleitung"
-        intro={_.first(teamIntrosByType["Schulleitung"])}
-        members={teamMembersByType["Schulleitung"]}
-      />
-      <PositionTypeMembers
-        type="Team"
-        intro={_.first(teamIntrosByType["Team"])}
-        members={teamMembersByType["Team"]}
-      />
+      {
+        teamGroups.map(({ positionType, intro, teamMembers }, i) =>
+          <TeamGroup
+            key={i}
+            type={positionType}
+            intro={intro}
+            members={teamMembers}
+          />
+        )
+      }
     </section>
   )
 }
@@ -188,25 +184,25 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
-        teamIntros {
+        teamGroups {
           positionType
-          text          
-        }
-        teamMembers {
-          name: title
-          positionType
-          image {
-            childImageSharp {
-             resolutions(width: 160, height: 160, quality: 90, cropFocus: CENTER) {
-               ...GatsbyImageSharpResolutions
-             }
+          intro
+          teamMembers {
+            name: title
+            positionType
+            image {
+              childImageSharp {
+               resolutions(width: 160, height: 160, quality: 90, cropFocus: CENTER) {
+                 ...GatsbyImageSharpResolutions
+               }
+              }
             }
-          }
-          position
-          experience
-          children {
-            name
-            year
+            position
+            experience
+            children {
+              name
+              year
+            }
           }
         }
       }

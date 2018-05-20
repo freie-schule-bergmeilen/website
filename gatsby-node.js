@@ -52,10 +52,15 @@ exports.onCreateNode = ({
       })
     }
 
-    const { teamMembers } = frontmatter
-    if (teamMembers) {
-      teamMembers.forEach(obj => {
-        obj.image = adjust(obj.image)
+    const { teamGroups } = frontmatter
+    if (teamGroups) {
+      teamGroups.forEach(group => {
+        const { teamMembers } = group
+        if (teamMembers) {
+          teamMembers.forEach(obj => {
+            obj.image = adjust(obj.image)
+          })
+        }
       })
     }
   }

@@ -52,27 +52,33 @@ collections:
           - {label: "Template", name: "templateKey", widget: "hidden", default: "page"}
           - {label: "Pfad", name: "path", widget: "hidden", default: "/team2"}
           - {label: "Title", name: "title", widget: "string"}
-          - name: teamMembers
-            label: Mitglieder
+          - name: teamGroups
+            label: Gruppen
             widget: list
             fields:
-              - {name: title, label: Name}
-              - {name: position, label: "Funktion an der Schule"}
-              - label: Stellentyp
-                name: positionType
-                widget: select
-                options: ["Schulleitung", "Team"]
-                default: "Team"
-              - {name: experience, label: "Ausbildung/Berufserfahrung", required: false}
-              - {name: image, label: Foto, widget: image, required: false, class: "team"}
-              - name: children
-                label: Kinder
+              - {name: positionType, label: Name}
+              - {label: "Intro", name: "intro", widget: "markdown"}
+              - name: teamMembers
+                label: Mitglieder
                 widget: list
-                required: false
                 fields:
-                  - {label: Name, name: name, widget: string}
-                  - {label: Year, name: year, widget: string}
-              - {name: body, widget: hidden, default: ""}
+                  - {name: title, label: Name}
+                  - {name: position, label: "Funktion an der Schule"}
+                  - label: Stellentyp
+                    name: positionType
+                    widget: select
+                    options: ["Schulleitung", "Team"]
+                    default: "Team"
+                  - {name: experience, label: "Ausbildung/Berufserfahrung", required: false}
+                  - {name: image, label: Foto, widget: image, required: false, class: "team"}
+                  - name: children
+                    label: Kinder
+                    widget: list
+                    required: false
+                    fields:
+                      - {label: Name, name: name, widget: string}
+                      - {label: Year, name: year, widget: string}
+                  - {name: body, widget: hidden, default: ""}
 
       - file: "src/pages/gallery.md"
         label: "Fotos"
