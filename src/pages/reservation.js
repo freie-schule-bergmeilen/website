@@ -22,13 +22,12 @@ export default () =>
       name="reservation"
       method="POST"
       data-netlify="true"
-      data-netlify-recaptcha="true"
       data-netlify-honeypot="bot-trap"
     >
       <input type="hidden" name="form-name" value="reservation" />
       <p style={{ display: 'none' }}>
         <label>
-          Don’t fill this out if you're human: <input name="bot-trap" type="text" />
+          Don’t fill this out if you're human: <input name="bot-trap" />
         </label>
       </p>
 
@@ -202,6 +201,11 @@ export default () =>
 
       </div>
 
+      <div className="field">
+        <p className="control">
+          <div data-netlify-recaptcha="true"/>
+        </p>
+      </div>
       <div className="field">
         <p className="control">
           <button className="button is-primary is-large" type="submit">Anfrage abschicken</button>
