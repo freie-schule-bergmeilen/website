@@ -22,9 +22,15 @@ export default () =>
       name="reservation"
       method="POST"
       data-netlify="true"
-      data-netlify-honeypot="bot-field"
+      data-netlify-recaptcha="true"
+      data-netlify-honeypot="bot-trap"
     >
       <input type="hidden" name="form-name" value="reservation" />
+      <p style={{ display: 'none' }}>
+        <label>
+          Don’t fill this out if you're human: <input name="bot-trap" type="text" />
+        </label>
+      </p>
 
       <div className="field is-horizontal">
         <div className="field-label is-normal">
@@ -140,7 +146,7 @@ export default () =>
         <div className="field-body">
           <div className="field">
             <p className="control is-expanded has-icons-left has-icons-right">
-              <input className="input" type="email" placeholder="E-Mail" value="" />
+              <input className="input" type="email" placeholder="E-Mail" />
               {/*is-success*/}
               <span className="icon is-small is-left">
                 <i className="fa fa-envelope"/>
