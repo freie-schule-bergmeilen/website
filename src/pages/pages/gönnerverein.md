@@ -19,4 +19,4 @@ Gönnerverein Freie Schule Bergmeilen, \
 Bank Linth LLG AG, 8730 Uznach
 
 Wir freuen uns zudem über jede Begegnung, die uns weiterbringt und über jede Person, die interessierten Familien von unserer Schule erzählt!\
-Kontakt: fsbergmeilen@gmx.net
+Kontakt: info@freie-schule-bergmeilen.ch

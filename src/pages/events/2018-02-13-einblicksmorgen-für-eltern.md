@@ -18,7 +18,7 @@ Ende des Einblickmorgens: 12:00
 
 
 
-Die Anzahl Plätze für den Einblicksmorgen sind beschränkt. Wir bitten um verbindliche Anmeldung per email: fsbergmeilen@gmx.net
+Die Anzahl Plätze für den Einblicksmorgen sind beschränkt. Wir bitten um verbindliche Anmeldung per email: info@freie-schule-bergmeilen.ch
 
 
 

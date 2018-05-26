@@ -12,7 +12,7 @@ An unseren Informationsabenden stellen wir uns vor, informieren über den Wochen
 
 Ein einfacher Apéro im Anschluss an den Informationsteil bietet Gelegenheit für persönliche Gespräche und Austausch.
 
-**Wir bitten um eine Anmeldung per email: fsbergmeilen@gmx.net mit Namen, Anzahl Erwachsenen und Kindern, Datum des Anlasses.**
+**Wir bitten um eine Anmeldung per email: info@freie-schule-bergmeilen.ch mit Namen, Anzahl Erwachsenen und Kindern, Datum des Anlasses.**
 
 Kinder sind herzlich willkommen, Spielmöglichkeiten sind vorhanden.
 

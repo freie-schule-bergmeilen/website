@@ -95,7 +95,7 @@ export default (
               <div className="column is-3">
                 <h4>E-Mail</h4>
                 <small>
-                  <a href="mailto:fsbergmeilen@gmx.net">fsbergmeilen@gmx.net</a>
+                  <a href="mailto:info@freie-schule-bergmeilen.ch">info@freie-schule-bergmeilen.ch</a>
                 </small>
               </div>
               <div className="column is-3">

@@ -12,7 +12,7 @@ Ankunft: 9:30
 
 Ende des Einblickmorgens: 12:00
 
-Die Anzahl Plätze für den Einblicksmorgen sind beschränkt. Wir bitten um verbindliche Anmeldung per email: fsbergmeilen@gmx.net
+Die Anzahl Plätze für den Einblicksmorgen sind beschränkt. Wir bitten um verbindliche Anmeldung per email: info@freie-schule-bergmeilen.ch
 
 Der Einblicksmorgen ist ein Anlass für Erwachsene. Es ist nicht möglich, Kinder mitzunehmen. Damit Kinder unsere Schule kennenlernen können, werden individuelle Schnupperwochen vereinbart. Wir empfehlen Eltern, vorgängig einen Einblicksmorgen oder einen Informationsabend zu besuchen.
 

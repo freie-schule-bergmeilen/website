@@ -8,7 +8,7 @@ order: '0'
 ---
 ## E-Mail
 
-<mailto:fsbergmeilen@gmx.net>
+<mailto:info@freie-schule-bergmeilen.ch>
 
 (E-Mails werden innerhalb weniger Tage beantwortet)
 
