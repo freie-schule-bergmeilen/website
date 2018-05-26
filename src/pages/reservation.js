@@ -19,13 +19,12 @@ export default () =>
 
     <form
       className="form"
-      name="contact"
+      name="reservation"
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
-      <input type="hidden" name="form-name" value="Platzreservation" />
-
+      <input type="hidden" name="form-name" value="reservation" />
 
       <div className="field is-horizontal">
         <div className="field-label is-normal">
@@ -34,7 +33,7 @@ export default () =>
         <div className="field-body">
           <div className="field">
             <p className="control is-expanded has-icons-left">
-              <input className="input" type="text" placeholder="Ihr Name"/>
+              <input className="input" name="name" type="text" placeholder="Ihr Name"/>
               <span className="icon is-small is-left">
                 <i className="fa fa-user"/>
               </span>
@@ -50,12 +49,12 @@ export default () =>
         <div className="field-body">
           <div className="field has-addons">
             <p className="control">
-              <div className="select">
+              <span className="select">
                 <select className="select" name="stufe" >
                   <option>der Primarschule</option>
                   <option>im Kindergarten</option>
                 </select>
-              </div>
+              </span>
             </p>
             <p className="control has-icons-right">
               <input className="input" type="text" name="year" placeholder="Jahr/Klasse"/>
@@ -71,12 +70,12 @@ export default () =>
         <div className="field-body">
           <div className="field">
             <p className="control">
-              <div className="select">
+              <span className="select">
                 <select className="select" name="start" >
                   <option>dem neuen Schuljahr</option>
                   <option>möglichst bald</option>
                 </select>
-              </div>
+              </span>
             </p>
           </div>
         </div>
@@ -99,7 +98,7 @@ export default () =>
             </p>
             <p className="control">
               <span className="select">
-                <select className="select" name="role[]" >
+                <select className="select" name="childSex">
                   <option>Mädchen</option>
                   <option>Bub</option>
                 </select>
@@ -144,46 +143,26 @@ export default () =>
               <input className="input" type="email" placeholder="E-Mail" value="" />
               {/*is-success*/}
               <span className="icon is-small is-left">
-                  <i className="fa fa-envelope"/>
-                </span>
+                <i className="fa fa-envelope"/>
+              </span>
               {/*<span className="icon is-small is-right">*/}
               {/*<i className="fa fa-check"/>*/}
               {/*</span>*/}
             </p>
           </div>
           <div className="field is-expanded">
-            <div className="field has-addons">
-              <p className="control">
-                <a className="button is-static">
-                  +41
-                </a>
-              </p>
-              <p className="control is-expanded">
-                <input className="input" type="tel" placeholder="Telefonnummer" />
-              </p>
-            </div>
+            <p className="control is-expanded has-icons-left has-icons-right">
+              <input className="input" type="tel" name="phone" placeholder="Telefonnummer" />
+              <span className="icon is-small is-left">
+                <i className="fa fa-phone"/>
+              </span>
+            </p>
           </div>
         </div>
       </div>
 
 
 
-
-
-      {/*<div className="field is-horizontal">*/}
-        {/*<div className="field-label is-normal">*/}
-          {/*<label className="label">Geschwister</label>*/}
-        {/*</div>*/}
-        {/*<div className="field-body">*/}
-          {/*<div className="field">*/}
-            {/*<textarea*/}
-              {/*className="textarea" name="siblings"*/}
-              {/*placeholder="Namen und Geburtsdaten von Geschwistern"*/}
-              {/*rows={2}*/}
-            {/*/>*/}
-          {/*</div>*/}
-        {/*</div>*/}
-      {/*</div>*/}
 
 
       <div className="field is-horizontal">
@@ -200,47 +179,6 @@ export default () =>
       </div>
 
 
-      {/*<div className="field is-horizontal">*/}
-          {/*<div className="field-label is-normal">*/}
-            {/*<label className="label">Adresse</label>*/}
-          {/*</div>*/}
-          {/*<div className="field-body">*/}
-            {/*<div className="field">*/}
-              {/*<div className="control">*/}
-              {/*</div>*/}
-            {/*</div>*/}
-          {/*</div>*/}
-        {/*</div>*/}
-
-
-
-
-
-        {/*<div className="field is-horizontal">*/}
-          {/*<div className="field-label is-normal">*/}
-            {/*<label className="label">Familienname</label>*/}
-          {/*</div>*/}
-          {/*<div className="field-body">*/}
-            {/*<p className="control is-expanded has-icons-left">*/}
-              {/*<input className="input" type="text" placeholder="Name"/>*/}
-              {/*<span className="icon is-small is-left">*/}
-              {/*<i className="fa fa-user"></i>*/}
-            {/*</span>*/}
-            {/*</p>*/}
-          {/*</div>*/}
-        {/*</div>*/}
-        {/*<div className="field">*/}
-          {/*<label className="label">Adresse</label>*/}
-          {/*<textarea className="textarea" name="address"></textarea>*/}
-        {/*</div>*/}
-        {/*<div className="field">*/}
-          {/*<label className="label">E-Mail</label>*/}
-          {/*<input className="input" type="email" name="name" />*/}
-        {/*</div>*/}
-        {/*<div className="field">*/}
-          {/*<label className="label">Bemerkungen/Fragen:</label>*/}
-          {/*<textarea className="textarea" name="remarks"></textarea>*/}
-        {/*</div>*/}
 
       <div className="content">
 
