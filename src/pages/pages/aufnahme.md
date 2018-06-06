@@ -37,7 +37,7 @@ unterschrieben.
 <div class="box" style="text-align:center">
   <a 
     class="button is-info is-large"
-    href="/docs/Schulgeld_Stundenplaene_Reservation.pdf"
+    href="/docs/Elterninfo_FSBergmeilen.pdf"
     target="_blank"
     rel="noopener"
    >
