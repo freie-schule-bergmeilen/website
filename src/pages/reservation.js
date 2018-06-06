@@ -1,5 +1,353 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { withFormik, Field, Form } from 'formik'
+import { isEmpty, trim } from 'lodash'
+
+const ERRORS__REQUIRED_FIELD = 'Dieses Feld ist ein Pflichtfeld'
+const ERRORS__INVALID_FIELD = 'Die Eingabe ist ungültig'
+
+const isEmptyValue = (value) => isEmpty(value) || isEmpty(trim(value))
+
+const BIRTHDAY_REGEXP = /^\s*\d{2}\.\d{2}\.\d{4}\s*$/
+const isValidBirthday = (birthday) => BIRTHDAY_REGEXP.test(String(birthday).toLowerCase())
+
+const EMAIL_REGEXP = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+const isValidEmail = (email) => EMAIL_REGEXP.test(String(email).toLowerCase())
+
+const PHONE_REGEXP = /^[\+\(\)\-\.\d\s*]{8,}$/
+const isValidPhone = (phone) => PHONE_REGEXP.test(trim(String(phone)).toLowerCase())
+
+const FieldCheck = ({ touched, error }) => {
+  if (!touched) return null
+  if (isEmpty(error)) {
+    return (
+      <span className="icon is-small is-right">
+        <i className="fa fa-check"/>
+      </span>
+    )
+  } else {
+    return (
+      <p className="help is-danger">{error}</p>
+    )
+  }
+}
+
+const fieldClasses = (component, touched, error) =>
+  component + (touched ? (error ? ' is-danger' : ' is-success') : '')
+
+const ReservationForm = withFormik({
+  mapPropsToValues: (props) => {
+    return {
+      name: '',
+      stufe: 'Primarschule',
+      year: '',
+      start: 'Schuljahr',
+      childName: '',
+      childBirthday: '',
+      childSex: 'weiblich',
+      address: '',
+      email: '',
+      phone: '',
+      remarks: '',
+    }
+  },
+  validate: (values, props) => {
+    const errors = {}
+    if (isEmptyValue(values.name)) {
+      errors.name = ERRORS__REQUIRED_FIELD
+    }
+    if (isEmptyValue(values.year)) {
+      errors.year = ERRORS__REQUIRED_FIELD
+    }
+    if (isEmptyValue(values.childName)) {
+      errors.childName = ERRORS__REQUIRED_FIELD
+    }
+    if (isEmptyValue(values.childBirthday)) {
+      errors.childBirthday = ERRORS__REQUIRED_FIELD
+    } else if (!isValidBirthday(values.childBirthday)) {
+      errors.childBirthday =
+        'Das Format muss so sein: z.B. 01.11.2015'
+    }
+    if (isEmptyValue(values.address)) {
+      errors.address = ERRORS__REQUIRED_FIELD
+    }
+    if (isEmptyValue(values.email)) {
+      errors.email = ERRORS__REQUIRED_FIELD
+    } else if (!isValidEmail(values.email)) {
+      errors.email = ERRORS__INVALID_FIELD
+    }
+    if (isEmptyValue(values.phone)) {
+      errors.phone = ERRORS__REQUIRED_FIELD
+    } else if (!isValidPhone(values.phone)) {
+      errors.phone = ERRORS__INVALID_FIELD
+    }
+    return errors
+  },
+  handleSubmit: (
+    values,
+    {
+      props,
+      setSubmitting,
+      setErrors /* setValues, setStatus, and other goodies */,
+    }
+  ) => {
+    // e.preventDefault()
+    document.getElementById('reservationForm').submit()
+    setSubmitting(false)
+    //
+    // console.log("Start submitting", values)
+    // setTimeout(() => {
+    //   setSubmitting(false)
+    //   console.log("End submitting")
+    // }, 5000)
+  },
+})(({
+    values,
+    errors,
+    touched,
+    isSubmitting,
+    isValid,
+ }) =>
+  <Form
+    id="reservationForm"
+    className="form"
+    name="reservation"
+    method="POST"
+    data-netlify="true"
+    data-netlify-honeypot="bot-trap"
+  >
+    <input type="hidden" name="form-name" value="reservation" />
+    <p style={{ display: 'none' }}>
+      <label>
+        Don’t fill this out if you're human: <input name="bot-trap" />
+      </label>
+    </p>
+
+    <div className="field is-horizontal">
+      <div className="field-label is-normal">
+        <label className="label">Von</label>
+      </div>
+      <div className="field-body">
+        <div className="field">
+          <p className="control is-expanded has-icons-left has-icons-right">
+            <Field
+              className={fieldClasses('input', touched.name, errors.name)}
+              name="name" type="text" placeholder="Ihr Name"
+            />
+            <span className="icon is-small is-left">
+              <i className="fa fa-user"/>
+            </span>
+            <FieldCheck touched={touched.name} error={errors.name} />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="field is-horizontal">
+      <div className="field-label is-normal">
+        <label className="label">Einen Platz in</label>
+      </div>
+      <div className="field-body">
+        <div className="field has-addons">
+          <p className="control">
+              <span className="select">
+                <Field
+                  component="select"
+                  name="stufe"
+                  className="select"
+                >
+                  <option value="Primarschule">der Primarschule</option>
+                  <option value="Kindergarten">im Kindergarten</option>
+                </Field>
+              </span>
+          </p>
+          <p className="control has-icons-right">
+            <Field
+              className={fieldClasses('input', touched.year, errors.year)}
+              type="text" name="year" placeholder="Klasse/Jahr"
+            />
+            <FieldCheck touched={touched.year} error={errors.year} />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="field is-horizontal">
+      <div className="field-label is-normal">
+        <label className="label">Ab</label>
+      </div>
+      <div className="field-body">
+        <div className="field">
+          <p className="control">
+              <span className="select">
+                <Field component="select" className="select" name="start" >
+                  <option value="Schuljahr">dem neuen Schuljahr</option>
+                  <option value="Bald">möglichst bald</option>
+                </Field>
+              </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div className="field is-horizontal">
+      <div className="field-label is-normal">
+        <label className="label">Ihr Kind</label>
+      </div>
+      <div className="field-body">
+
+        <div className="field has-addons">
+          <p className="control has-icons-left has-icons-right">
+            <Field
+              className={fieldClasses('input', touched.childName, errors.childName)}
+              type="text" name="childName"
+              placeholder="Vorname des Kindes"
+            />
+            <span className="icon is-small is-left">
+              <i className="fa fa-child"/>
+            </span>
+            <FieldCheck touched={touched.childName} error={errors.childName} />
+          </p>
+          <p className="control">
+              <span className="select">
+                <Field
+                  component="select"
+                  className="select"
+                  name="childSex"
+                >
+                  <option>weiblich</option>
+                  <option>männlich</option>
+                </Field>
+              </span>
+          </p>
+        </div>
+
+        <div className="field">
+          <p className="control has-icons-left has-icons-right">
+            <Field
+              className={fieldClasses('input', touched.childBirthday, errors.childBirthday)}
+              type="text" name="childBirthday"
+              placeholder="Geburtsdatum, z.B. 01.11.2015"
+            />
+            <span className="icon is-small is-left">
+              <i className="fa fa-calendar"/>
+            </span>
+            <FieldCheck touched={touched.childBirthday} error={errors.childBirthday} />
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div className="field is-horizontal">
+      <div className="field-label is-normal">
+        <label className="label">Ihre Kontaktdaten</label>
+      </div>
+      <div className="field-body">
+        <div className="control is-expanded has-icons-right">
+          <Field
+            component="textarea"
+            className={fieldClasses('textarea', touched.address, errors.address)}
+            name="address"
+            placeholder="Ihre Adresse"
+            rows={3} cols={30}
+          />
+          <FieldCheck touched={touched.address} error={errors.address} />
+        </div>
+      </div>
+    </div>
+
+    <div className="field is-horizontal">
+      <div className="field-label is-normal">
+        <label className="label"/>
+      </div>
+      <div className="field-body">
+        <div className="field">
+          <p className="control is-expanded has-icons-left has-icons-right">
+            <Field
+              type="email" placeholder="E-Mail"
+              className={fieldClasses('input', touched.email, errors.email)}
+              name="email"
+            />
+            <span className="icon is-small is-left">
+              <i className="fa fa-envelope"/>
+            </span>
+            <FieldCheck touched={touched.email} error={errors.email} />
+          </p>
+        </div>
+        <div className="field is-expanded">
+          <p className="control is-expanded has-icons-left has-icons-right">
+            <Field
+              name="phone" placeholder="Telefonnummer"
+              className={fieldClasses('input', touched.phone, errors.phone)}
+              type="tel"
+            />
+            <span className="icon is-small is-left">
+              <i className="fa fa-phone"/>
+            </span>
+            <FieldCheck touched={touched.phone} error={errors.phone} />
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div className="field is-horizontal">
+      <div className="field-label is-normal">
+        <label className="label">Bemerkungen</label>
+      </div>
+      <div className="field-body">
+        <div className="field">
+            <Field
+              component="textarea"
+              className="textarea" name="remarks" placeholder="Bemerkungen/Fragen"
+            />
+        </div>
+      </div>
+    </div>
+
+
+
+    <div className="content">
+
+      <p>
+        Die Reservation ist kostenlos und für beide Seiten unverbindlich. Eine Schnupperwoche wird unabhängig von einem
+        Vertragsabschluss mit Fr. 500.- pro Familie verrechnet. Ein Anmeldegespräch wird sofern kein
+        Vertragsabschluss zustande kommt mit Fr. 80.- verrechnet. Bei Vertragsabschluss ist das
+        Anmeldegespräch kostenlos.
+      </p>
+
+      <p>
+        Nach Erhalt des Reservationsformulars nehmen wir mit Ihnen Kontakt auf, um das weitere Vorgehen
+        zu besprechen.
+      </p>
+
+    </div>
+
+    <div className="field">
+      <p className="control">
+        <span data-netlify-recaptcha="true"/>
+      </p>
+    </div>
+    <div className="field is-grouped is-grouped-right">
+      <p className="control">
+        <button
+          className="button is-primary is-large" type="submit"
+          disabled={isSubmitting || !isValid}
+        >
+          {isSubmitting &&
+            <div className="loader" style={{ position: 'absolute' }}/>
+          }
+          <div style={{ opacity: isSubmitting ? 0.1 : 1 }}>Anfrage abschicken</div>
+        </button>
+      </p>
+    </div>
+  </Form>
+)
 
 export default () =>
   <section className="section">
@@ -16,202 +364,8 @@ export default () =>
       </p>
     </div>
 
+    <ReservationForm />
 
-    <form
-      className="form"
-      name="reservation"
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-trap"
-    >
-      <input type="hidden" name="form-name" value="reservation" />
-      <p style={{ display: 'none' }}>
-        <label>
-          Don’t fill this out if you're human: <input name="bot-trap" />
-        </label>
-      </p>
-
-      <div className="field is-horizontal">
-        <div className="field-label is-normal">
-          <label className="label">Von</label>
-        </div>
-        <div className="field-body">
-          <div className="field">
-            <p className="control is-expanded has-icons-left">
-              <input className="input" name="name" type="text" placeholder="Ihr Name"/>
-              <span className="icon is-small is-left">
-                <i className="fa fa-user"/>
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="field is-horizontal">
-        <div className="field-label is-normal">
-          <label className="label">Einen Platz in</label>
-        </div>
-        <div className="field-body">
-          <div className="field has-addons">
-            <p className="control">
-              <span className="select">
-                <select className="select" name="stufe" >
-                  <option>der Primarschule</option>
-                  <option>im Kindergarten</option>
-                </select>
-              </span>
-            </p>
-            <p className="control has-icons-right">
-              <input className="input" type="text" name="year" placeholder="Jahr/Klasse"/>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="field is-horizontal">
-        <div className="field-label is-normal">
-          <label className="label">Ab</label>
-        </div>
-        <div className="field-body">
-          <div className="field">
-            <p className="control">
-              <span className="select">
-                <select className="select" name="start" >
-                  <option>dem neuen Schuljahr</option>
-                  <option>möglichst bald</option>
-                </select>
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-      <div className="field is-horizontal">
-        <div className="field-label is-normal">
-          <label className="label">Ihr Kind</label>
-        </div>
-        <div className="field-body">
-
-          <div className="field has-addons">
-            <p className="control has-icons-left has-icons-right">
-              <input className="input" type="text" name="childName"
-                     placeholder="Vorname des Kindes"/>
-              <span className="icon is-small is-left">
-                <i className="fa fa-child"/>
-              </span>
-            </p>
-            <p className="control">
-              <span className="select">
-                <select className="select" name="childSex">
-                  <option>Mädchen</option>
-                  <option>Bub</option>
-                </select>
-              </span>
-            </p>
-          </div>
-
-          <div className="field">
-            <p className="control has-icons-left has-icons-right">
-              <input className="input" type="text" name="childBirthday"
-                     placeholder="Geburtsdatum, z.B. 01.11.2015"/>
-              <span className="icon is-small is-left">
-                <i className="fa fa-calendar"/>
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-      <div className="field is-horizontal">
-        <div className="field-label is-normal">
-          <label className="label">Ihre Kontaktdaten</label>
-        </div>
-        <div className="field-body">
-          <div className="field">
-            <textarea
-              className="textarea" name="address" placeholder="Ihre Adresse"
-              rows={3}
-            />
-          </div>
-        </div>
-      </div>
-
-      <div className="field is-horizontal">
-        <div className="field-label is-normal">
-          <label className="label"/>
-        </div>
-        <div className="field-body">
-          <div className="field">
-            <p className="control is-expanded has-icons-left has-icons-right">
-              <input className="input" type="email" placeholder="E-Mail" />
-              {/*is-success*/}
-              <span className="icon is-small is-left">
-                <i className="fa fa-envelope"/>
-              </span>
-              {/*<span className="icon is-small is-right">*/}
-              {/*<i className="fa fa-check"/>*/}
-              {/*</span>*/}
-            </p>
-          </div>
-          <div className="field is-expanded">
-            <p className="control is-expanded has-icons-left has-icons-right">
-              <input className="input" type="tel" name="phone" placeholder="Telefonnummer" />
-              <span className="icon is-small is-left">
-                <i className="fa fa-phone"/>
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-      <div className="field is-horizontal">
-        <div className="field-label is-normal">
-          <label className="label">Bemerkungen</label>
-        </div>
-        <div className="field-body">
-          <div className="field">
-            <textarea
-              className="textarea" name="remarks" placeholder="Bemerkungen/Fragen"
-            />
-          </div>
-        </div>
-      </div>
-
-
-
-      <div className="content">
-
-        <p>
-        Die Reservation ist kostenlos und unverbindlich. Eine Schnupperwoche wird unabhängig von einem
-        Vertragsabschluss mit Fr. 500.- pro Familie verrechnet. Ein Anmeldegespräch wird sofern kein
-        Vertragsabschluss zustande kommt mit Fr. 80.- verrechnet. Bei Vertragsabschluss ist das
-        Anmeldegespräch kostenlos.
-        </p>
-
-        <p>
-        Nach Erhalt des Reservationsformulars nehmen wir mit Ihnen Kontakt auf, um das weitere Vorgehen
-        zu besprechen.
-        </p>
-
-      </div>
-
-      <div className="field">
-        <p className="control">
-          <div data-netlify-recaptcha="true"/>
-        </p>
-      </div>
-      <div className="field">
-        <p className="control">
-          <button className="button is-primary is-large" type="submit">Anfrage abschicken</button>
-        </p>
-      </div>
-    </form>
 
   </section>
 
