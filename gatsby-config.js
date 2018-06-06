@@ -68,6 +68,12 @@ module.exports = {
       },
     },
 
-
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: '#076CAD',
+        showSpinner: false,
+      },
+    },
   ]
 };
