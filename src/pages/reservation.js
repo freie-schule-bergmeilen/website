@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { withFormik, Field, Form } from 'formik'
+import { withFormik, Field } from 'formik'
 import { isEmpty, trim } from 'lodash'
 
 const ERRORS__REQUIRED_FIELD = 'Dieses Feld ist ein Pflichtfeld'
@@ -106,9 +106,9 @@ const ReservationForm = withFormik({
     errors,
     touched,
     isSubmitting,
-    isValid,
- }) =>
-  <Form
+    isValid, handleSubmit, }) =>
+  <form
+    onSubmit={handleSubmit}
     id="reservationForm"
     className="form"
     name="reservation"
@@ -346,7 +346,7 @@ const ReservationForm = withFormik({
         </button>
       </p>
     </div>
-  </Form>
+  </form>
 )
 
 export default () =>
