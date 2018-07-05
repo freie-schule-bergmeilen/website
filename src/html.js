@@ -32,7 +32,6 @@ module.exports = class HTML extends React.Component {
           />
           {this.props.headComponents}
           {css}
-          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
@@ -42,7 +41,6 @@ module.exports = class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script src="/js/netlify-login.js"></script>
         </body>
       </html>
     )

@@ -60,17 +60,17 @@ export default class Nav extends PureComponent {
     })
   }
 
-  handleClickAdmin = () => {
-    if(typeof window !== 'undefined') {
-      if (window.netlifyIdentity) {
-        if (window.netlifyIdentity.currentUser()) {
-          document.location.href = "/admin/"
-        } else {
-          window.netlifyIdentity.open()
-        }
-      }
-    }
-  }
+  // handleClickAdmin = () => {
+  //   if(typeof window !== 'undefined') {
+  //     if (window.netlifyIdentity) {
+  //       if (window.netlifyIdentity.currentUser()) {
+  //         document.location.href = "/admin/"
+  //       } else {
+  //         window.netlifyIdentity.open()
+  //       }
+  //     }
+  //   }
+  // }
 
   renderBrand() {
     const { isBurgerActive } = this.state
@@ -174,7 +174,7 @@ export default class Nav extends PureComponent {
 
             <a
               className="navbar-item"
-              onClick={this.handleClickAdmin}
+              href="/admin/"
             >
               <span className="icon">
                 <i className="fa fa-lg fa-lock"
