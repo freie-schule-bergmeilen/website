@@ -5,6 +5,7 @@ import { isEmpty, trim } from 'lodash'
 
 require('whatwg-fetch')
 
+const FORM_NAME = 'reservation'
 const FORM_STATUS__SUBMITTED = 'FORM_SUBMITTED'
 
 const ERRORS__REQUIRED_FIELD = 'Dies ist ein Pflichtfeld'
@@ -106,7 +107,7 @@ const ReservationForm = withFormik({
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode(values)
+      body: encode({ 'form-name': FORM_NAME, ...values })
     })
       .then(() => {
         setStatus(FORM_STATUS__SUBMITTED)
@@ -144,14 +145,14 @@ const ReservationForm = withFormik({
     <h2 className="title is-size-3">Platzreservation</h2>
     <div className="content">
     <form
-    onSubmit={handleSubmit}
-    id="reservationForm"
-    className="form"
-    name="reservation"
-    method="POST"
-    data-netlify="true"
-    data-netlify-honeypot="bot-trap"
-  >
+      onSubmit={handleSubmit}
+      id="reservationForm"
+      className="form"
+      name={FORM_NAME}
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-trap"
+    >
     <p>
     Mit diesem Formular haben Sie die Möglichkeit, einen Kindergarten- oder Primarschulplatz in der
     FREIEN SCHULE Bergmeilen zu reservieren. Um gegenseitige Erwartungen zu klären führen wir
@@ -383,12 +384,15 @@ const ReservationForm = withFormik({
       leider nicht verschickt werden.
       </p>
       <p>
-        Versuchen Sie bitte nochmals.
-      </p>
-      <p>
-        Sonst können Sie uns die Anfrage auch per E-Mail
+        Versuchen Sie bitte nochmals. Sonst können Sie uns die Anfrage auch per E-Mail
         auf <a href="mailto:info@freie-schule-bergmeilen.ch">info@freie-schule-bergmeilen.ch</a> schicken.
       </p>
+    </div>
+    }
+
+    {!isEmpty(errors) &&
+    <div className="notification is-danger">
+      Sie haben das Formular noch nicht korrekt ausgefüllt.
     </div>
     }
 
