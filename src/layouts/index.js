@@ -3,7 +3,8 @@ import Nav from '../components/Nav'
 import Helmet from 'react-helmet';
 import '../styles/styles.scss'
 import Carousel from '../components/Carousel'
-import { isEmpty } from 'lodash'
+import isEmpty from 'lodash/isEmpty'
+import find from 'lodash/find'
 
 
 export default (
@@ -16,7 +17,7 @@ export default (
     },
     ...props
   }) => {
-  const currentPage = pages.edges.find(
+  const currentPage = find(pages.edges,
     ({ node }) => node.frontmatter.path === props.location.pathname
   )
 
