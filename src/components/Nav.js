@@ -150,6 +150,7 @@ export default class Nav extends PureComponent {
               </div>
               <div className="navbar-dropdown">
                 {renderAddedPages('Angebot')}
+                <NavLink to="/reservation" text="Platzreservation"/>
               </div>
             </div>
             <div className="navbar-item has-dropdown is-hoverable">

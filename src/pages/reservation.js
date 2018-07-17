@@ -371,11 +371,11 @@ const ReservationForm = withFormik({
 
     </div>
 
-    <div className="field">
-      <p className="control">
-        <div data-netlify-recaptcha="true"></div>
-      </p>
-    </div>
+    {/*<div className="field">*/}
+      {/*<p className="control">*/}
+        {/*<div data-netlify-recaptcha="true"></div>*/}
+      {/*</p>*/}
+    {/*</div>*/}
 
     {errors.form &&
     <div className="notification is-danger">
