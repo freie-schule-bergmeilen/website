@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { withFormik, Field } from 'formik'
-import { isEmpty, trim } from 'lodash'
+import { isEmpty, trim, pick, keys } from 'lodash'
 
 require('whatwg-fetch')
 
@@ -32,7 +32,7 @@ const FieldCheck = ({ touched, error }) => {
     )
   } else {
     return (
-      <p className="help is-danger">{error}</p>
+      <span className="help is-danger">{error}</span>
     )
   }
 }
@@ -390,9 +390,9 @@ const ReservationForm = withFormik({
     </div>
     }
 
-    {!isEmpty(errors) &&
+    {!isEmpty(pick(errors, keys(touched))) &&
     <div className="notification is-danger">
-      Sie haben das Formular noch nicht korrekt ausgefüllt.
+      Sie haben das Formular noch nicht korrekt oder vollständig ausgefüllt.
     </div>
     }
 
