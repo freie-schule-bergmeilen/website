@@ -3,7 +3,11 @@ import Helmet from 'react-helmet'
 import { withFormik, Field } from 'formik'
 import { isEmpty, trim } from 'lodash'
 
-const ERRORS__REQUIRED_FIELD = 'Dieses Feld ist ein Pflichtfeld'
+require('whatwg-fetch')
+
+const FORM_STATUS__SUBMITTED = 'FORM_SUBMITTED'
+
+const ERRORS__REQUIRED_FIELD = 'Dies ist ein Pflichtfeld'
 const ERRORS__INVALID_FIELD = 'Die Eingabe ist ungültig'
 
 const isEmptyValue = (value) => isEmpty(value) || isEmpty(trim(value))
@@ -34,6 +38,12 @@ const FieldCheck = ({ touched, error }) => {
 
 const fieldClasses = (component, touched, error) =>
   component + (touched ? (error ? ' is-danger' : ' is-success') : '')
+
+const encode = values =>
+   Object.keys(values)
+      .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(values[key])}`)
+      .join('&')
+
 
 const ReservationForm = withFormik({
   mapPropsToValues: (props) => {
@@ -88,26 +98,52 @@ const ReservationForm = withFormik({
     {
       props,
       setSubmitting,
-      setErrors /* setValues, setStatus, and other goodies */,
+      setErrors,
+      setStatus,
+      setValues,
     }
   ) => {
-    // e.preventDefault()
-    document.getElementById('reservationForm').submit()
-    setSubmitting(false)
-    //
-    // console.log("Start submitting", values)
-    // setTimeout(() => {
-    //   setSubmitting(false)
-    //   console.log("End submitting")
-    // }, 5000)
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode(values)
+    })
+      .then(() => {
+        setStatus(FORM_STATUS__SUBMITTED)
+        setSubmitting(false)
+      })
+      .catch(error => {
+        console.log(error)
+        setErrors({ form: true })
+        setSubmitting(false)
+      })
   },
 })(({
     values,
     errors,
     touched,
+    status,
     isSubmitting,
     isValid, handleSubmit, }) =>
-  <form
+  status === FORM_STATUS__SUBMITTED ?
+  <section>
+    <h2 className="title is-size-3">Danke für Ihre Anfrage!</h2>
+    <div className="content">
+      <p>
+      Wir werden mit Ihnen in Kürze Kontakt aufnehmen, um das weitere Vorgehen zu besprechen.
+      </p>
+    </div>
+  </section>
+  :
+  <section
+    style={{
+      opacity: isSubmitting ? 0.5 : 1,
+      pointerEvents: isSubmitting ? 'none' : undefined,
+    }}
+  >
+    <h2 className="title is-size-3">Platzreservation</h2>
+    <div className="content">
+    <form
     onSubmit={handleSubmit}
     id="reservationForm"
     className="form"
@@ -116,6 +152,12 @@ const ReservationForm = withFormik({
     data-netlify="true"
     data-netlify-honeypot="bot-trap"
   >
+    <p>
+    Mit diesem Formular haben Sie die Möglichkeit, einen Kindergarten- oder Primarschulplatz in der
+    FREIEN SCHULE Bergmeilen zu reservieren. Um gegenseitige Erwartungen zu klären führen wir
+    Schnuppertage und vor der definitiven Anmeldung ein Elterngespräch durch.
+    </p>
+
     <input type="hidden" name="form-name" value="reservation" />
     <p style={{ display: 'none' }}>
       <label>
@@ -330,14 +372,31 @@ const ReservationForm = withFormik({
 
     <div className="field">
       <p className="control">
-        <span data-netlify-recaptcha="true"/>
+        <div data-netlify-recaptcha="true"></div>
       </p>
     </div>
+
+    {errors.form &&
+    <div className="notification is-danger">
+      <p>
+      Oops... Sorry, die Anfrage konnte aus einem technischen Grund
+      leider nicht verschickt werden.
+      </p>
+      <p>
+        Versuchen Sie bitte nochmals.
+      </p>
+      <p>
+        Sonst können Sie uns die Anfrage auch per E-Mail
+        auf <a href="mailto:info@freie-schule-bergmeilen.ch">info@freie-schule-bergmeilen.ch</a> schicken.
+      </p>
+    </div>
+    }
+
     <div className="field is-grouped is-grouped-right">
       <p className="control">
         <button
           className="button is-primary is-large" type="submit"
-          disabled={isSubmitting || !isValid}
+          disabled={isSubmitting}
         >
           {isSubmitting &&
             <div className="loader" style={{ position: 'absolute' }}/>
@@ -347,6 +406,8 @@ const ReservationForm = withFormik({
       </p>
     </div>
   </form>
+  </div>
+</section>
 )
 
 export default () =>
@@ -354,18 +415,8 @@ export default () =>
     <Helmet>
       <title>Platzreservation</title>
     </Helmet>
-    <h2 className="title is-size-3">Platzreservation</h2>
-    <div className="content">
-
-      <p>
-      Mit diesem Formular haben Sie die Möglichkeit, einen Kindergarten- oder Primarschulplatz in der
-      FREIEN SCHULE Bergmeilen zu reservieren. Um gegenseitige Erwartungen zu klären führen wir
-      Schnuppertage und vor der definitiven Anmeldung ein Elterngespräch durch.
-      </p>
-    </div>
 
     <ReservationForm />
-
 
   </section>
 
