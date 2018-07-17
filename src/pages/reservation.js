@@ -20,7 +20,7 @@ const EMAIL_REGEXP = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+
 const isValidEmail = (email) => EMAIL_REGEXP.test(String(email).toLowerCase())
 
 const PHONE_REGEXP = /^[\+\(\)\-\.\d\s*]{8,}$/
-const isValidPhone = (phone) => PHONE_REGEXP.test(trim(String(phone)).toLowerCase())
+const isValidPhone = (telefonnummer) => PHONE_REGEXP.test(trim(String(telefonnummer)).toLowerCase())
 
 const FieldCheck = ({ touched, error }) => {
   if (!touched) return null
@@ -51,15 +51,15 @@ const ReservationForm = withFormik({
     return {
       name: '',
       stufe: 'Primarschule',
-      year: '',
-      start: 'Schuljahr',
-      childName: '',
-      childBirthday: '',
-      childSex: 'weiblich',
-      address: '',
+      jahr: '',
+      beginn: 'Schuljahr',
+      vornameDesKindes: '',
+      geburtsdatum: '',
+      geschlecht: 'weiblich',
+      adresse: '',
       email: '',
-      phone: '',
-      remarks: '',
+      telefonnummer: '',
+      bemerkungen: '',
     }
   },
   validate: (values, props) => {
@@ -67,30 +67,30 @@ const ReservationForm = withFormik({
     if (isEmptyValue(values.name)) {
       errors.name = ERRORS__REQUIRED_FIELD
     }
-    if (isEmptyValue(values.year)) {
-      errors.year = ERRORS__REQUIRED_FIELD
+    if (isEmptyValue(values.jahr)) {
+      errors.jahr = ERRORS__REQUIRED_FIELD
     }
-    if (isEmptyValue(values.childName)) {
-      errors.childName = ERRORS__REQUIRED_FIELD
+    if (isEmptyValue(values.vornameDesKindes)) {
+      errors.vornameDesKindes = ERRORS__REQUIRED_FIELD
     }
-    if (isEmptyValue(values.childBirthday)) {
-      errors.childBirthday = ERRORS__REQUIRED_FIELD
-    } else if (!isValidBirthday(values.childBirthday)) {
-      errors.childBirthday =
+    if (isEmptyValue(values.geburtsdatum)) {
+      errors.geburtsdatum = ERRORS__REQUIRED_FIELD
+    } else if (!isValidBirthday(values.geburtsdatum)) {
+      errors.geburtsdatum =
         'Das Format muss so sein: z.B. 01.11.2015'
     }
-    if (isEmptyValue(values.address)) {
-      errors.address = ERRORS__REQUIRED_FIELD
+    if (isEmptyValue(values.adresse)) {
+      errors.adresse = ERRORS__REQUIRED_FIELD
     }
     if (isEmptyValue(values.email)) {
       errors.email = ERRORS__REQUIRED_FIELD
     } else if (!isValidEmail(values.email)) {
       errors.email = ERRORS__INVALID_FIELD
     }
-    if (isEmptyValue(values.phone)) {
-      errors.phone = ERRORS__REQUIRED_FIELD
-    } else if (!isValidPhone(values.phone)) {
-      errors.phone = ERRORS__INVALID_FIELD
+    if (isEmptyValue(values.telefonnummer)) {
+      errors.telefonnummer = ERRORS__REQUIRED_FIELD
+    } else if (!isValidPhone(values.telefonnummer)) {
+      errors.telefonnummer = ERRORS__INVALID_FIELD
     }
     return errors
   },
@@ -206,10 +206,10 @@ const ReservationForm = withFormik({
           </p>
           <p className="control has-icons-right">
             <Field
-              className={fieldClasses('input', touched.year, errors.year)}
-              type="text" name="year" placeholder="Klasse/Jahr"
+              className={fieldClasses('input', touched.jahr, errors.jahr)}
+              type="text" name="jahr" placeholder="Klasse/Jahr"
             />
-            <FieldCheck touched={touched.year} error={errors.year} />
+            <FieldCheck touched={touched.jahr} error={errors.jahr} />
           </p>
         </div>
       </div>
@@ -223,7 +223,7 @@ const ReservationForm = withFormik({
         <div className="field">
           <p className="control">
               <span className="select">
-                <Field component="select" className="select" name="start" >
+                <Field component="select" className="select" name="beginn" >
                   <option value="Schuljahr">dem neuen Schuljahr</option>
                   <option value="Bald">möglichst bald</option>
                 </Field>
@@ -243,21 +243,21 @@ const ReservationForm = withFormik({
         <div className="field has-addons">
           <p className="control has-icons-left has-icons-right">
             <Field
-              className={fieldClasses('input', touched.childName, errors.childName)}
-              type="text" name="childName"
+              className={fieldClasses('input', touched.vornameDesKindes, errors.vornameDesKindes)}
+              type="text" name="vornameDesKindes"
               placeholder="Vorname des Kindes"
             />
             <span className="icon is-small is-left">
               <i className="fa fa-child"/>
             </span>
-            <FieldCheck touched={touched.childName} error={errors.childName} />
+            <FieldCheck touched={touched.vornameDesKindes} error={errors.vornameDesKindes} />
           </p>
           <p className="control">
               <span className="select">
                 <Field
                   component="select"
                   className="select"
-                  name="childSex"
+                  name="geschlecht"
                 >
                   <option>weiblich</option>
                   <option>männlich</option>
@@ -269,14 +269,14 @@ const ReservationForm = withFormik({
         <div className="field">
           <p className="control has-icons-left has-icons-right">
             <Field
-              className={fieldClasses('input', touched.childBirthday, errors.childBirthday)}
-              type="text" name="childBirthday"
+              className={fieldClasses('input', touched.geburtsdatum, errors.geburtsdatum)}
+              type="text" name="geburtsdatum"
               placeholder="Geburtsdatum, z.B. 01.11.2015"
             />
             <span className="icon is-small is-left">
               <i className="fa fa-calendar"/>
             </span>
-            <FieldCheck touched={touched.childBirthday} error={errors.childBirthday} />
+            <FieldCheck touched={touched.geburtsdatum} error={errors.geburtsdatum} />
           </p>
         </div>
       </div>
@@ -291,12 +291,12 @@ const ReservationForm = withFormik({
         <div className="control is-expanded has-icons-right">
           <Field
             component="textarea"
-            className={fieldClasses('textarea', touched.address, errors.address)}
-            name="address"
+            className={fieldClasses('textarea', touched.adresse, errors.adresse)}
+            name="adresse"
             placeholder="Ihre Adresse"
             rows={3} cols={30}
           />
-          <FieldCheck touched={touched.address} error={errors.address} />
+          <FieldCheck touched={touched.adresse} error={errors.adresse} />
         </div>
       </div>
     </div>
@@ -322,14 +322,14 @@ const ReservationForm = withFormik({
         <div className="field is-expanded">
           <p className="control is-expanded has-icons-left has-icons-right">
             <Field
-              name="phone" placeholder="Telefonnummer"
-              className={fieldClasses('input', touched.phone, errors.phone)}
+              name="telefonnummer" placeholder="Telefonnummer"
+              className={fieldClasses('input', touched.telefonnummer, errors.telefonnummer)}
               type="tel"
             />
             <span className="icon is-small is-left">
-              <i className="fa fa-phone"/>
+              <i className="fa fa-telefonnummer"/>
             </span>
-            <FieldCheck touched={touched.phone} error={errors.phone} />
+            <FieldCheck touched={touched.telefonnummer} error={errors.telefonnummer} />
           </p>
         </div>
       </div>
@@ -347,7 +347,7 @@ const ReservationForm = withFormik({
         <div className="field">
             <Field
               component="textarea"
-              className="textarea" name="remarks" placeholder="Bemerkungen/Fragen"
+              className="textarea" name="bemerkungen" placeholder="Bemerkungen/Fragen"
             />
         </div>
       </div>
