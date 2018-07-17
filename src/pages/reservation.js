@@ -162,7 +162,7 @@ const ReservationForm = withFormik({
     <input type="hidden" name="form-name" value="reservation" />
     <p style={{ display: 'none' }}>
       <label>
-        Don’t fill this out if you're human: <input name="bot-trap" />
+        Don’t fill this out if you're human: <Field name="bot-trap" />
       </label>
     </p>
 
