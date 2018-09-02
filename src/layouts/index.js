@@ -7,6 +7,7 @@ import isEmpty from 'lodash/isEmpty'
 import find from 'lodash/find'
 import sortBy from 'lodash/sortBy'
 import menu from '../../menu.json'
+import FooterNav from '../components/FooterNav'
 
 
 export default (
@@ -70,7 +71,7 @@ export default (
         <meta name="keywords" content={meta.keywords}/>
       </Helmet>
 
-      <div className="container">
+      <div className="container top-bar">
         <Nav
           title={title}
           menu={menuWithAddedItems}
@@ -101,11 +102,24 @@ export default (
 
       <div className="container">{children()}</div>
 
-      <footer className="footer" style={{ padding: 0 }}>
+      <footer
+        className="footer footer-nav"
+        style={{
+          // padding: 0,
+          paddingTop: 40,
+          paddingBottom: 40,
+        }}
+      >
         <div className="container">
-          <section className="section">
-            <div className="columns">
+          <FooterNav menu={menuWithAddedItems} />
+        </div>
+      </footer>
 
+      <footer
+        className="footer footer-credits"
+      >
+        <div className="container">
+            <div className="columns">
               <div className="column is-6">
                 <small>
                   &copy; {new Date().getFullYear()} Freie Schule Bergmeilen
@@ -127,7 +141,6 @@ export default (
                 </small>
               </div>
             </div>
-          </section>
         </div>
       </footer>
 
@@ -169,7 +182,7 @@ export const query = graphql`
             carousel {
               image {
                 childImageSharp {
-                 sizes(maxHeight:320, quality: 90, cropFocus: CENTER) {
+                 sizes(maxWidth: 1300, maxHeight:520, quality: 90, cropFocus: CENTER) {
                    ...GatsbyImageSharpSizes
                  }
                 }
@@ -184,7 +197,7 @@ export const query = graphql`
       edges {
         node {
           ... on ImageSharp {
-            sizes(maxHeight:320, quality: 90, cropFocus: CENTER) {
+            sizes(maxWidth: 1300, maxHeight:520, quality: 90, cropFocus: CENTER) {
               ...GatsbyImageSharpSizes
             }
           }
