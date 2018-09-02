@@ -327,7 +327,7 @@ const ReservationForm = withFormik({
               type="tel"
             />
             <span className="icon is-small is-left">
-              <i className="fa fa-telefonnummer"/>
+              <i className="fa fa-phone"/>
             </span>
             <FieldCheck touched={touched.telefonnummer} error={errors.telefonnummer} />
           </p>
