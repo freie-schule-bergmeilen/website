@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link';
 //import logo from '../img/logo.svg';
 import './nav.scss'
-import _ from 'lodash'
 import { css } from 'glamor'
 import { window } from 'global'
+import isEmpty from 'lodash/isEmpty'
 
 const styles = {
   brand: css({
@@ -37,10 +37,12 @@ export default class Nav extends PureComponent {
 
   static propTypes = {
     title: PropTypes.string.isRequired,
-    pages: PropTypes.arrayOf(PropTypes.shape({
-      path: PropTypes.string.isRequired,
+    menu: PropTypes.arrayOf(PropTypes.shape({
       title: PropTypes.string.isRequired,
-      section: PropTypes.string.isRequired,
+      items: PropTypes.arrayOf(PropTypes.shape({
+        path: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+      }))
     }))
   }
 
@@ -102,9 +104,7 @@ export default class Nav extends PureComponent {
 
   render() {
     const { isBurgerActive } = this.state
-    const { pages } = this.props
-
-    const pagesBySection = _.groupBy(pages, 'section')
+    const { menu } = this.props
 
     const NavLink = ({ to, text }) =>
       <Link
@@ -115,13 +115,6 @@ export default class Nav extends PureComponent {
       >
         {text}
       </Link>
-
-    const renderAddedPages = (section) =>
-      (pagesBySection[section] || [])
-        .map(({ title, path }) =>
-          <NavLink key={path} to={path} text={title} />
-        )
-
 
     return (
       <nav className="navbar">
@@ -134,65 +127,48 @@ export default class Nav extends PureComponent {
           }
         >
           <div className="navbar-end">
+            { menu.map(section => (
+              <div
+                key={section.title}
+                className="navbar-item has-dropdown is-hoverable"
+              >
+                <div className="navbar-link">{section.title}</div>
+                {!isEmpty(section.items) &&
+                <div className="navbar-dropdown">
+                  {section.items.map(item =>
+                    <NavLink
+                      key={item.path}
+                      to={item.path}
+                      text={item.title}
+                    />
+                  )}
+                </div>}
+              </div>
+            ))}
 
-            <div className="navbar-item has-dropdown is-hoverable">
-              <div className="navbar-link">
-                Aktuelles
-              </div>
-              <div className="navbar-dropdown">
-                <NavLink to="/events" text="Veranstaltungen"/>
-              </div>
-            </div>
 
-            <div className="navbar-item has-dropdown is-hoverable">
-              <div className="navbar-link">
-                Angebot
-              </div>
-              <div className="navbar-dropdown">
-                {renderAddedPages('Angebot')}
-                <NavLink to="/reservation" text="Platzreservation"/>
-              </div>
-            </div>
-            <div className="navbar-item has-dropdown is-hoverable">
-              <div className="navbar-link">
-                Philosophie
-              </div>
-              <div className="navbar-dropdown">
-                <NavLink to="/goals" text="Unsere Leitgedanken"/>
-                {renderAddedPages('Philosophie')}
-              </div>
-            </div>
-            <div className="navbar-item has-dropdown is-hoverable">
-              <div className="navbar-link">
-                Über uns
-              </div>
-              <div className="navbar-dropdown">
-                <NavLink to="/gallery" text="Fotos"/>
-                <NavLink to="/team" text="Team"/>
-                {renderAddedPages('Über uns')}
-              </div>
-            </div>
-
-            <a
-              className="navbar-item"
-              href="/admin/"
-            >
+            <div style={{ display: 'flex', marginLeft: 25 }}>
+              <a
+                className="navbar-item"
+                href="/admin/"
+              >
               <span className="icon">
                 <i className="fa fa-lg fa-lock"
-                  style={{ position: 'relative', top: 1, }}
+                   style={{ position: 'relative', top: 1, }}
                 />
               </span>
-            </a>
-            <a className="navbar-item" href="https://forum.freie-schule-bergmeilen.ch/" target="_blank" rel="noopener">
+              </a>
+              <a className="navbar-item" href="https://forum.freie-schule-bergmeilen.ch/" target="_blank" rel="noopener">
               <span className="icon">
                 <i className="fa fa-lg fa-comments"/>
               </span>
-            </a>
-            <a className="navbar-item" href="https://www.facebook.com/Freie-Schule-Bergmeilen-502505593264330/" target="_blank" rel="noopener">
+              </a>
+              <a className="navbar-item" href="https://www.facebook.com/Freie-Schule-Bergmeilen-502505593264330/" target="_blank" rel="noopener">
               <span className="icon">
                 <i className="fa fa-lg fa-facebook-official"/>
               </span>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </nav>

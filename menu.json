@@ -1,0 +1,27 @@
+[
+    {
+      "title": "Aktuelles",
+      "items": [
+        { "path": "/events", "title": "Veranstaltungen" }
+      ]
+    },
+    {
+      "title": "Angebot",
+      "items": [
+        { "path": "/reservation", "title": "Platzreservation", "order": 9999 }
+      ]
+    },
+    {
+      "title": "Philosophie",
+      "items": [
+        { "path": "/goals", "title": "Unsere Leitgedanken" }
+      ]
+    },
+    {
+      "title": "Über uns",
+      "items": [
+        { "path": "/gallery", "title": "Fotos" },
+        { "path": "/team", "title": "Team" }
+      ]
+    }
+  ]

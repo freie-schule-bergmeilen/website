@@ -5,6 +5,8 @@ import '../styles/styles.scss'
 import Carousel from '../components/Carousel'
 import isEmpty from 'lodash/isEmpty'
 import find from 'lodash/find'
+import sortBy from 'lodash/sortBy'
+import menu from '../../menu.json'
 
 
 export default (
@@ -41,6 +43,25 @@ export default (
     }
     hero = frontmatter.hero
   }
+
+  const addedPagesBySection = _.groupBy(
+    pages.edges.map(({ node: { frontmatter } }) => frontmatter), 'section'
+  )
+
+  const menuWithAddedItems = menu.map(section => {
+    const items = addedPagesBySection[section.title]
+    if (isEmpty(items)) {
+      return section
+    }
+    return {
+      ...section,
+      items: sortBy([
+        ...section.items,
+        ...items,
+      ], d => d.order || 0)
+    }
+  })
+
   return (
     <div>
       <Helmet>
@@ -52,9 +73,7 @@ export default (
       <div className="container">
         <Nav
           title={title}
-          pages={pages.edges.map(
-            ({ node: { frontmatter } }) => frontmatter
-          )}
+          menu={menuWithAddedItems}
         />
       </div>
 
