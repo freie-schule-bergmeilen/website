@@ -392,7 +392,7 @@ const ReservationForm = withFormik({
 
     {!isEmpty(pick(errors, keys(touched))) &&
     <div className="notification is-danger">
-      Sie haben das Formular noch nicht korrekt oder nicht vollständig ausgefüllt.
+      Sie haben das Formular noch nicht korrekt oder vollständig ausgefüllt.
     </div>
     }
 

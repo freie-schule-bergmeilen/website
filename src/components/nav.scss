@@ -1,0 +1,39 @@
+@media screen and (min-width: 1087px) {
+  .navbar {
+    .navbar-menu {
+      padding-right: 1.5em;
+    }
+  }
+}
+@media screen and (max-width: 1087px) {
+  .navbar {
+    .navbar-menu {
+      border-top: 2px solid #209cee;
+
+      .navbar-item {
+        .navbar-item {
+          padding-left: 2.5rem;
+        }
+        .navbar-link {
+          padding-right: 1rem;
+          font-size: 1.2rem;
+        }
+        div.navbar-link {
+          cursor: default;
+          font-weight: normal;
+          color: #999;
+        }
+        .navbar-dropdown {
+          font-size: 1.2rem;
+          padding-bottom: 1.0rem;
+          padding-top: 0rem;
+          margin-bottom: .5rem;
+          border-bottom: 1px solid #ccc;
+        }
+      }
+      div.navbar-link:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}

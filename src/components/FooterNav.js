@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link';
+import './nav.scss'
 import { window } from 'global'
 import isEmpty from 'lodash/isEmpty'
 

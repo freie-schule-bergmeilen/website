@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link';
 //import logo from '../img/logo.svg';
+import './nav.scss'
 import { css } from 'glamor'
 import { window } from 'global'
 import isEmpty from 'lodash/isEmpty'
@@ -116,7 +117,7 @@ export default class Nav extends PureComponent {
       </Link>
 
     return (
-      <nav className="navbar is-fixed-top">
+      <nav className="navbar">
         { this.renderBrand() }
 
         <div
@@ -125,7 +126,7 @@ export default class Nav extends PureComponent {
             ${isBurgerActive && 'is-active'}`
           }
         >
-          <div className="navbar-start">
+          <div className="navbar-end">
             { menu.map(section => (
               <div
                 key={section.title}
@@ -144,9 +145,8 @@ export default class Nav extends PureComponent {
                 </div>}
               </div>
             ))}
-          </div>
 
-          <div className="navbar-end">
+
             <div style={{ display: 'flex', marginLeft: 25 }}>
               <a
                 className="navbar-item"
