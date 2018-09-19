@@ -7,16 +7,6 @@ teamGroups:
     positionType: Schulleitung
     teamMembers:
       - children:
-          - name: Navin
-            year: '2012'
-        experience: >-
-          Sozialpädagogin (HF Agogis), langjährige Berufserfahrung mit Kindern
-          und Jugendlichen mit herausforderndem Verhalten
-        image: /img/irene-e1448835722886.jpg
-        position: Begleitung im Schulalltag
-        positionType: Schulleitung
-        title: Irene Pfenninger
-      - children:
           - name: Jael
             year: '2012'
           - name: Louis
@@ -59,5 +49,22 @@ teamGroups:
           Umgebungspflege
         positionType: Schulleitung
         title: Michael Guggenbühl
+      - children:
+          - name: Navin
+            year: '2012'
+        experience: >-
+          Sozialpädagogin (HF Agogis), langjährige Berufserfahrung mit Kindern
+          und Jugendlichen mit herausforderndem Verhalten
+        image: /img/irene-e1448835722886.jpg
+        position: Begleitung im Schulalltag
+        positionType: Schulleitung
+        title: Irene Pfenninger
+  - positionType: Lernbegleiter
+    teamMembers:
+      - experience: Kindergarten-/Unterstufenlehrperson
+        image: /img/monique_sommer.jpg
+        position: Lernbegleiterin Kindergarten
+        positionType: Team
+        title: Monique Sommer
 ---
 
