@@ -71,7 +71,8 @@ teamGroups:
             year: '2007'
           - name: Miro
             year: '2010'
-          - {}
+          - name: Lucie
+            year: '2013'
         experience: 'Kindergartenlehrperson, Heilpädagogin'
         position: Lernbegleiterin Kindergarten und Primarstufe
         positionType: Team
@@ -93,7 +94,12 @@ teamGroups:
         position: Lernbegleiterin
         positionType: Team
         title: Marina Maffei
-      - experience: Sportlehrer
+      - children:
+          - name: Manoah
+            year: '2011'
+          - name: Amon
+            year: '2013'
+        experience: Sportlehrer
         position: Lernbegleiter
         positionType: Team
         title: Daniel Schibli
