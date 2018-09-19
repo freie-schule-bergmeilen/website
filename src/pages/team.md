@@ -66,5 +66,36 @@ teamGroups:
         position: Lernbegleiterin Kindergarten
         positionType: Team
         title: Monique Sommer
+      - children:
+          - name: Maira
+            year: '2007'
+          - name: Miro
+            year: '2010'
+          - {}
+        experience: 'Kindergartenlehrperson, Heilpädagogin'
+        position: Lernbegleiterin Kindergarten und Primarstufe
+        positionType: Team
+        title: Claudia Scheiwiller
+      - children:
+          - name: Jael
+            year: '2013'
+          - name: Arjen
+            year: '2015'
+        experience: Primarlehrperson
+        position: Lernbegleiterin Primarstufe
+        title: Jeannine van Puijenbroek
+      - children:
+          - name: Sia
+            year: '2012'
+          - name: Siro
+          - name: Danilo
+        experience: Walsdspielgruppenleiterin
+        position: Lernbegleiterin
+        positionType: Team
+        title: Marina Maffei
+      - experience: Sportlehrer
+        position: Lernbegleiter
+        positionType: Team
+        title: Daniel Schibli
 ---
 
