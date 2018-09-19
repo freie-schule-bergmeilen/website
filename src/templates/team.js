@@ -94,13 +94,24 @@ const TeamMember = ({
   return (
     <div {...styles.teamMember.outer}>
       <article>
-        <div>
-          { resolutions && <figure className=" is-2by3">
+        <div style={{
+          minHeight: 165,
+          display: 'flex',
+          alignContent: 'center',
+          justifyContent: 'center',
+        }}>
+          { resolutions ? <figure className=" is-2by3">
             <Img
               className={styles.img}
               resolutions={resolutions}
             />
-          </figure>
+          </figure> :
+            <div style={{
+              backgroundColor: '#eee',
+              width: 160,
+              height: 160,
+              borderRadius: '50%',
+            }}></div>
           }
         </div>
         <div>
@@ -119,7 +130,8 @@ const TeamMember = ({
                 {!_.isEmpty(children) &&
                 <div>
                   <div {...styles.teamMember.kids.title}>
-                    Kinder: {children.map(({ name, year }) => `${name}, ${year}`).join(', ')}
+                    Kinder: {children.map(
+                      ({ name, year }) => [name, year ? `(${year})` : ''].filter(c => !!c).join(' ')).join(', ')}
                   </div>
                 </div>
                 }

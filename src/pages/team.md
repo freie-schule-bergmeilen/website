@@ -61,7 +61,7 @@ teamGroups:
         title: Irene Pfenninger
   - positionType: Lernbegleiter
     teamMembers:
-      - experience: Kindergarten-/Unterstufenlehrperson
+      - experience: Lehrperson (Kindergarten-/Unterstufe)
         image: /img/monique_sommer.jpg
         position: Lernbegleiterin Kindergarten
         positionType: Team
