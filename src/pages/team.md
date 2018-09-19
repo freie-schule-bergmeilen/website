@@ -11,9 +11,9 @@ teamGroups:
             year: '2012'
           - name: Louis
             year: '2015'
-        experience: ' Spielgruppenleiterin Zertifikat SSLV, Drogistin HF mit mehrjähriger Erfahrung im praxisnahen Unterrichten von Berufsschülern (überbetriebliche Kurse Drogisten)'
+        experience: ' Spielgruppenleiterin Zertifikat SSLV, Drogistin HF mit mehrjähriger Erfahrung im praxisnahen Unterrichten von Berufsschülern (überbetriebliche Kurse Drogisten), Basisworkshop Original Play'
         image: /img/karin.jpg
-        position: Begleitung im Schulalltag
+        position: 'Lernbegleiterin, Administration, Personal'
         positionType: Schulleitung
         title: Karin Escher
       - children:
@@ -31,7 +31,7 @@ teamGroups:
           Gesundheits-und Bewegungsprojekten in Zusammenarbeit mit Samowar
           Meilen, Kursleiterin Eltern-Kind Tanzen & Singen / Kindertanzen.
         image: /img/martina-1024x575.jpg
-        position: Lernbegleiterin im Schulalltag
+        position: 'Lernbegleiterin, Pädagogische Verantwortung Kindergarten'
         positionType: Schulleitung
         title: Martina Kunz Guggenbühl
       - children:
@@ -45,8 +45,8 @@ teamGroups:
           Weiterbildung: Elternbildung in integrativer Erziehung
         image: /img/michael-2.jpg
         position: >-
-          Lernbegleiter im Schulalltag, Technik, Infrastruktur und
-          Umgebungspflege
+          Lernbegleiter, Pädagogische Verantwortung Primarstufe,
+          Technik/Infrastruktur
         positionType: Schulleitung
         title: Michael Guggenbühl
       - children:
@@ -56,7 +56,7 @@ teamGroups:
           Sozialpädagogin (HF Agogis), langjährige Berufserfahrung mit Kindern
           und Jugendlichen mit herausforderndem Verhalten
         image: /img/irene-e1448835722886.jpg
-        position: Begleitung im Schulalltag
+        position: 'Lernbegleiterin, Datenplanung (Schnupperdaten), Anlässe'
         positionType: Schulleitung
         title: Irene Pfenninger
   - positionType: Lernbegleiter
