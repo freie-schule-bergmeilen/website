@@ -61,7 +61,7 @@ teamGroups:
         title: Irene Pfenninger
   - positionType: Lernbegleiter
     teamMembers:
-      - experience: Kindergarten-/Unterstufenlehrperson
+      - experience: Kindergarten-/ Unterstufenlehrperson
         image: /img/monique_sommer.jpg
         position: Lernbegleiterin Kindergarten
         positionType: Team
@@ -93,7 +93,7 @@ teamGroups:
           - name: Danilo
             year: '2001'
         experience: >-
-          Erziehungsberaterin, Spielgruppenleiterin/Waldspielgruppenleiterin,
+          Erziehungsberaterin, Spielgruppenleiterin/ Waldspielgruppenleiterin,
           Weiterbildungen gewaltfreie Kommunikation nach Rosenberg und  natives
           Lernen
         image: /img/marina_maffei.jpeg
