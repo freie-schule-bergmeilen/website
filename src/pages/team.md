@@ -61,7 +61,7 @@ teamGroups:
         title: Irene Pfenninger
   - positionType: Lernbegleiter
     teamMembers:
-      - experience: Lehrperson (Kindergarten-/Unterstufe)
+      - experience: Kindergarten-/Unterstufenlehrperson
         image: /img/monique_sommer.jpg
         position: Lernbegleiterin Kindergarten
         positionType: Team
@@ -89,8 +89,14 @@ teamGroups:
           - name: Sia
             year: '2012'
           - name: Siro
+            year: '1999'
           - name: Danilo
-        experience: Walsdspielgruppenleiterin
+            year: '2001'
+        experience: >-
+          Erziehungsberaterin, Spielgruppenleiterin/Waldspielgruppenleiterin,
+          Weiterbildungen gewaltfreie Kommunikation nach Rosenberg und  natives
+          Lernen
+        image: /img/marina_maffei.jpeg
         position: Lernbegleiterin
         positionType: Team
         title: Marina Maffei
