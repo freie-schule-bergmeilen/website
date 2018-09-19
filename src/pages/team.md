@@ -100,6 +100,7 @@ teamGroups:
           - name: Amon
             year: '2013'
         experience: Sportlehrer und Künstler
+        image: /img/daniel_schibli.jpg
         position: Lernbegleiter
         positionType: Team
         title: Daniel Schibli
