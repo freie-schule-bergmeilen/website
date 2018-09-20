@@ -27,19 +27,21 @@ const styles = {
       maxWidth: '20rem',
       padding: 10,
       border: '1px solid #fff',
-      '& .extras': {
-        maxHeight: 0,
-        overflow: 'hidden',
-        transition: 'max-height 0.5s ease-out',
-      },
-      '&:hover': {
-        border: '1px solid #ccc',
-        boxShadow: '0 2px 3px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1)',
-        borderRadius: 5,
+      '@media screen and (min-width: 736px)': {
         '& .extras': {
-          maxHeight: 1000,
+          maxHeight: 0,
+          overflow: 'hidden',
+          transition: 'max-height 0.5s ease-out',
         },
-      }
+        '&:hover': {
+          border: '1px solid #ccc',
+          boxShadow: '0 2px 3px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1)',
+          borderRadius: 5,
+          '& .extras': {
+            maxHeight: 1000,
+          },
+        }
+      },
     }),
     content: css({
       display: 'flex',
