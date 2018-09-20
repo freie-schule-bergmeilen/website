@@ -1,7 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { Carousel } from 'react-responsive-carousel'
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 import _ from 'lodash'
 
@@ -24,9 +24,7 @@ export default ({ images }) => {
     return null
   }
   return (
-    <div style={{
-      margin: '0 22px',
-    }}> {
+    <div className="carousel-outer"> {
       images.length > 1 ?
         <Carousel
           showStatus={false}
