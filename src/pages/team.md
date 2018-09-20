@@ -110,5 +110,10 @@ teamGroups:
         position: Lernbegleiter
         positionType: Team
         title: Daniel Schibli
+      - experience: 'Osteopath D.O:'
+        image: /img/ben_lobmaier.jpg
+        position: Englisch Lernbegleiter
+        positionType: Team
+        title: Ben Lobmaier
 ---
 
