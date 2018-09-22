@@ -96,7 +96,7 @@ teamGroups:
           Erziehungsberaterin, Spielgruppenleiterin/ Waldspielgruppenleiterin,
           Weiterbildungen gewaltfreie Kommunikation nach Rosenberg und  natives
           Lernen
-        image: /img/marina_maffei.jpeg
+        image: /img/marina.jpg
         position: Lernbegleiterin
         positionType: Team
         title: Marina Maffei
