@@ -2,15 +2,15 @@
 kind: event
 templateKey: event
 layout: event
-path: /einblicksmorgen-fuer-eltern-mar
+path: /einblicksmorgen-fuer-eltern-jan2019
 title: Einblicksmorgen für Eltern
-date: 2019-03-18T08:30:00.000Z
+date: 2019-01-21T08:30:20.168Z
 ---
 Am Einblicksmorgen haben interessierte Eltern Gelegenheit, den Alltag in unserer Schule mitzuerleben. Nach einer kurzen Einführung können Basis- und Primarstufe besucht werden. Im Anschluss gibt es die Möglichkeit, Fragen zu stellen und sich über die Eindrücke auszutauschen.
 
 **Ankunft: 9:30**
 
-Ende des Einblickmorgens: 12:00
+**Ende des Einblickmorgens: 12:00**
 
 Die Anzahl Plätze für den Einblicksmorgen sind beschränkt. Wir bitten um verbindliche Anmeldung per email: info@freie-schule-bergmeilen.ch
 
