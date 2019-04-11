@@ -10,7 +10,7 @@ order: '0'
 
 <mailto:info@freie-schule-bergmeilen.ch>
 
-(E-Mails werden innerhalb weniger Tage beantwortet)
+
 
 ## Telefon
 
@@ -25,7 +25,7 @@ Donnerstag von 8-10 Uhr, Martina Kunz
 
 ## SMS
 
-Sollten wir einmal nicht erreichbar sein, so bitten wir um eine Nachricht per SMS. Wir melden uns dann sobald als möglich zurück.
+Sollten wir einmal nicht erreichbar sein, bitten wir um eine Nachricht per SMS.
 
 ## Adresse
 
