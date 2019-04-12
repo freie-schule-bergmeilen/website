@@ -26,9 +26,16 @@ h1, h2, h3, h4 {
 
 .title {
   font-size: 1.75rem;
-  color: $color-primary-4;
+  color: $color-primary-3;
   //color: $color-secondary-2-3;
   font-weight: normal;
+  a {
+    color: $color-primary-3;
+  }
+}
+
+.content h1.title {
+  color: $color-primary-3;
 }
 
 .hero.is-info.is-bold {

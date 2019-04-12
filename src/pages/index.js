@@ -60,7 +60,7 @@ export default (
       {...styles.columns}
     >
       <div className="column">
-        <h2 className="title"><Link to="/goals">{goals.title}</Link></h2>
+        <h2 className="title">{goals.title}</h2>
         <div className="content">
           <GoalsList {...goals} />
         </div>
@@ -75,14 +75,20 @@ export default (
 
 
 
+
 export const pageQuery = graphql`
   query IndexQuery {
   
     ...events  
-    ...goals
 
     site {
       siteMetadata {
+        goals {
+          title
+          goals {
+            title
+          }
+        }
         numEvents
       }
     }
