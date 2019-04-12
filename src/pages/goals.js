@@ -28,7 +28,6 @@ export const eventsFragment = graphql`
         goals {
           title
           goals {
-            description
             title
           }
         }

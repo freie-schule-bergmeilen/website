@@ -41,6 +41,11 @@ collections:
         default: "Angebot"
       - {label: "Text", name: "body", widget: "markdown"}
       - {name: order, label: Position, widget: number, default: 0}
+      - name: carousel
+        label: Carousel images
+        widget: list
+        fields:
+          - {name: image, label: Foto, widget: image, required: true, class: "gallery"}
 
   - name: special-pages
     label: Spezielle Seiten
@@ -178,5 +183,5 @@ collections:
         description: "Ziele"
         fields:
           - {label: "Überschrift", name: title, widget: string}
-          - {label: "Text", name: text, widget: text}
+          - {label: "Text", name: text, widget: markdown}
 

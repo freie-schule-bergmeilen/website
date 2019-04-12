@@ -5,6 +5,8 @@ path: /kindergarten
 title: Kindergarten
 section: Angebot
 order: '0'
+carousel:
+  - image: '/img/20170907_093724.jpg'
 ---
 In unserem Kindergarten hat das Freie Spiel einen grossen Stellenwert. Im freien Spiel und im täglichen Miteinander sammeln die Kinder zahlreiche Erfahrungen und erwerben wichtige Sozial-, Selbst-, und Fachkompetenzen. 
 

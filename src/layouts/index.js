@@ -89,7 +89,7 @@ export default (
               <div className="container">
                 <section className="section">
                   <h1 className="title">{hero.title}</h1>
-                  <div className="content">{hero.text}</div>
+                  <div className="content" dangerouslySetInnerHTML={{ __html: hero.text }}/>
                 </section>
               </div>
             :

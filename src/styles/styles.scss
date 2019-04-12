@@ -128,3 +128,12 @@ li > p:last-child {
     margin: 0 22px;
   }
 }
+
+.hero quote {
+    display: block;
+    font-size: 15px;
+    font-style: italic;
+    border-left: 2px solid rgba(255,255,255,0.4);
+    padding: 10px;
+    margin: 5px;
+}

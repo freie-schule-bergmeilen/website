@@ -5,6 +5,8 @@ path: /primarstufe
 title: Primarstufe
 section: Angebot
 order: '0'
+carousel:
+  - image: '/img/20171107_134754.jpg'
 ---
 Auf der Primarstufe ist das Spiel immer noch ein wichtiger Teil im Lernalltag. In selber gestalteten Spielsituationen wird gerechnet, geschrieben, verhandelt, gewogen, diskutiert, kreiiert und nach Lösungen gesucht. 
 
