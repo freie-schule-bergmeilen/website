@@ -4,7 +4,7 @@ templateKey: event
 layout: event
 path: /herbstmarkt-meilen-september
 title: Herbstmarkt in Meilen
-date: 2019-09-06T09:57:55.198Z
+date: 2019-09-06T12:00:55.198Z
 ---
 Unsere Primarkinder freuen sich auf deinen Besuch!
 
