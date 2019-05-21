@@ -61,13 +61,13 @@ module.exports = {
         ]
       }
     },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId,
-        anonymize: true,
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-google-analytics',
+    //   options: {
+    //     trackingId,
+    //     anonymize: true,
+    //   },
+    // },
 
     {
       resolve: `gatsby-plugin-nprogress`,
