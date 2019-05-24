@@ -132,8 +132,8 @@ const TeamMember = ({
                 {!_.isEmpty(children) &&
                 <div>
                   <div {...styles.teamMember.kids.title}>
-                    Kinder: {children.map(
-                      ({ name, year }) => [name, year ? `(${year})` : ''].filter(c => !!c).join(' ')).join(', ')}
+                    {children.length} Kind{children.length > 1 ? 'er ' : ' '}
+                    ({children.map(({ year }) => year || '').filter(c => !!c).join(', ')})
                   </div>
                 </div>
                 }
