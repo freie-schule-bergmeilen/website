@@ -17,4 +17,6 @@ Unsere SekundarschülerInnen lernen frei und selbstbestimmt. Sie werden auf ihre
 
 Die Jugendlichen leben Freiheit und Verantwortung. Sie setzen sich intensiv mit sich und der Welt auseinander. Sie lernen in Gemeinschaft und individuell und bekommen den nötigen Freiraum, um ihre Stärken weiter entwickeln zu können.
 
-Unsere Sekundarstufe ist ideal für Jugendliche aus Freilernschulen oder aus freiem Homeschooling. Eltern unserer SekundarschülerInnen bringen ihren Kindern das Vertrauen entgegen, dass sie ihren (ur-)eigenen Weg entdecken und ihr Potential entfalten werden.
+Unsere Sekundarstufe ist ideal für Jugendliche aus Freilernschulen oder aus freiem Homeschooling. Eltern unserer SekundarschülerInnen bringen ihren Kindern viel  Vertrauen entgegen, so dass sie ihren (ur-)eigenen Weg entdecken und ihr Potential entfalten können.
+
+Während ihrer Schulzeit entwickeln die Jugendlichen Fähigkeiten und Eigenschaften, die für ihren Weg ins Berufsleben wertvoll sind wie z.B. Sozialkompetenz, Teamfähigkeit, Kreatives/Vernetztes Denken und Neugier.
