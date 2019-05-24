@@ -5,6 +5,8 @@ path: /aufnahme
 title: Aufnahme
 section: Angebot
 order: '100'
+carousel:
+  - image: /img/abc_basisstufe.jpg
 ---
 Wer an einem Schulplatz interessiert ist, geht folgendermassen vor:
 
@@ -16,7 +18,6 @@ Wer an einem Schulplatz interessiert ist, geht folgendermassen vor:
    Für die Platzreservation können Sie [dieses Online-Formular](/reservation) verwenden.
 3. **Schnupperwoche vereinbaren.**
    Die Schnuppertage ermöglichen ein gegenseitiges Kennenlernen. Uns ist es wichtig, dass das Kind alle Lernbegleiter und die anderen Kinder erleben, die Lernumgebung erkunden, und erste Eindrücke in unserem Lernalltag sammeln kann. Es gilt herauszufinden, ob sich das Kind bei uns wohl und aufgehoben fühlt, ob das freie Lernen seiner Persönlichkeit entspricht und ob wir die passende Schule für das Kind und seine Eltern sind.
-
    Die Schnupperwoche wird gemäss Tarifsystem verrechnet.
 4. **Anmeldegespräch.** 
    Im Anmeldegespräch werden gegenseitige Erwartungen geklärt und
