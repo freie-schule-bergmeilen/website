@@ -7,6 +7,14 @@ section: Angebot
 order: '0'
 carousel:
   - image: /img/20171107_134754.jpg
+  - image: /img/20160913_124840_Richtone(HDR).jpg
+  - image: /img/20161212_103803.jpg
+  - image: /img/20170428_182534.jpg
+  - image: /img/20180903_151502.jpg
+  - image: /img/20171109_124346.jpg
+  - image: /img/20171026_101224.jpg
+  - image: /img/20180208_132938.jpg
+  - image: /img/20181101_150008.jpg
 ---
 In der Primarstufe ist das Spiel immer noch ein wichtiger Teil im Lernalltag. In selber gestalteten Spielsituationen wird gerechnet, geschrieben, verhandelt, gewogen, diskutiert, kreiiert und nach Lösungen gesucht. 
 
