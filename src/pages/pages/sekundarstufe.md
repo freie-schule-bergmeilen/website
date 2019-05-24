@@ -4,7 +4,7 @@ templateKey: page
 path: /sekundarstufe
 title: Sekundarstufe
 section: Angebot
-order: 3
+order: 0
 carousel:
   - image: /img/20170831_114740.jpg
   - image: /img/20190523_100821.jpg
