@@ -9,6 +9,7 @@ carousel:
   - image: /img/20170907_093724.jpg
   - image: /img/20190514_115504.jpg
   - image: /img/20181030_095407.jpg
+  - image: /img/20190328_151628.jpg
 ---
 In unserem Kindergarten hat das Freie Spiel einen grossen Stellenwert. Im freien Spiel und im täglichen Miteinander sammeln die Kinder zahlreiche Erfahrungen und erwerben wichtige Sozial-, Selbst-, und Fachkompetenzen. 
 
