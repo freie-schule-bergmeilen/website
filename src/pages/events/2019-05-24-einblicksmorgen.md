@@ -4,7 +4,7 @@ templateKey: event
 layout: event
 path: /einblicksmorgen-september
 title: Einblicksmorgen
-date: 2019-09-23T07:30:18.930Z
+date: 2019-11-04T19:42:32.347Z
 ---
 Am Einblicksmorgen haben interessierte Eltern Gelegenheit, den Alltag in unserer Schule mitzuerleben. Nach einer kurzen Einführung können Basis- und Primarstufe besucht werden. Im Anschluss gibt es die Möglichkeit, Fragen zu stellen und sich über die Eindrücke auszutauschen.
 
@@ -18,4 +18,6 @@ Ende des Einblickmorgens: 12:00
 
 Für interessierte Eltern ist der Einblicksmorgen kostenlos. Berufskollegen und Interessierte bitten wir, uns für den Einblicksmorgen einen Unterstützungsbeitrag (Richtwert 30.- bis 50.-) zu überweisen: 
 
-CH10 0873 1551 1615 1200 1, Gönnerverein Freie Schule Bergmeilen, 8707 Uetikon am See
+CH10 0873 1551 1615 1200 1, 
+Gönnerverein Freie Schule Bergmeilen, 
+8707 Uetikon am See
