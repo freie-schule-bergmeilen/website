@@ -2,8 +2,8 @@
 kind: event
 templateKey: event
 path: /infoabend-jan
-title: 'Informationsabend im Schulhaus'
-date: 2018-01-17T18:00:00.000Z
+title: Informationsabend im Schulhaus
+date: 2020-03-09T18:00:00.000Z
 pin: true
 ---
 **Wir laden interessierte Familien zum gegenseitigen Kennenlernen ein und stellen unser Konzept vor.**
