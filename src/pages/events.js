@@ -16,26 +16,26 @@ export default (
   const future = eventNodes.filter(d =>
     new Date(d.node.frontmatter.date) >= now
   )
-  const past = eventNodes.filter(d =>
-    new Date(d.node.frontmatter.date) < now
-  ).reverse()
+  // const past = eventNodes.filter(d =>
+  //   new Date(d.node.frontmatter.date) < now
+  // ).reverse()
 
   return (
     <section className="section">
       <Helmet>
         <title>Veranstaltungen</title>
       </Helmet>
-      <h2 className="title is-size-3 is-bold-light">Aktuelle Veranstaltungen</h2>
+      <h2 className="title is-size-3 is-bold-light">Veranstaltungen</h2>
       <div>
         <EventsList events={future}/>
       </div>
 
       <br/><br/>
 
-      <h2 className="title is-size-3 is-bold-light">Frühere Veranstaltungen</h2>
-      <div>
-        <EventsList events={past}/>
-      </div>
+      {/*<h2 className="title is-size-3 is-bold-light">Frühere Veranstaltungen</h2>*/}
+      {/*<div>*/}
+      {/*  <EventsList events={past}/>*/}
+      {/*</div>*/}
     </section>
   )
 }
