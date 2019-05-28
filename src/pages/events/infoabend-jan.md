@@ -1,21 +1,23 @@
 ---
 kind: event
 templateKey: event
-path: /infoabend-jan
-title: Informationsabend im Schulhaus
-date: 2020-03-09T18:00:00.000Z
+path: /einblicksmorgen-jan
+title: Einblicksmorgen
+date: 2020-03-09T08:30:00.000Z
 pin: true
 ---
-**Wir laden interessierte Familien zum gegenseitigen Kennenlernen ein und stellen unser Konzept vor.**
+Am Einblicksmorgen haben interessierte Eltern Gelegenheit, den Alltag in unserer Schule mitzuerleben. Nach einer kurzen Einführung können Basis- und Primarstufe besucht werden. Im Anschluss gibt es die Möglichkeit, Fragen zu stellen und sich über die Eindrücke auszutauschen.
 
-An unseren Informationsabenden stellen wir uns vor, informieren über den Wochenablauf und beantworten Fragen zum freien Lernen und zu unserer Schule. 
+**Ankunft: 9:30**
 
-Ein einfacher Apéro im Anschluss an den Informationsteil bietet Gelegenheit für persönliche Gespräche und Austausch.
+Ende des Einblickmorgens: 12:00
 
-**Wir bitten um eine Anmeldung per email: info@freie-schule-bergmeilen.ch mit Namen, Anzahl Erwachsenen und Kindern, Datum des Anlasses.**
+**Die Anzahl Plätze für den Einblicksmorgen sind beschränkt. Wir bitten um verbindliche Anmeldung per email: info@freie-schule-bergmeilen.ch**
 
-Kinder sind herzlich willkommen, Spielmöglichkeiten sind vorhanden.
+**Der Einblicksmorgen ist ein Anlass für Erwachsene. Es ist nicht möglich, Kinder mitzunehmen.** Damit Kinder unsere Schule kennenlernen können, werden individuelle Schnupperwochen vereinbart. Wir empfehlen Eltern, vorgängig einen Einblicksmorgen oder einen Informationsabend zu besuchen.
 
-Der Informationsanlass findet im Schulhaus an der Toggwilerstr. 154 in Meilen statt, 
+Für interessierte Eltern ist der Einblicksmorgen kostenlos. Berufskollegen und Interessierte bitten wir, uns für den Einblicksmorgen einen Unterstützungsbeitrag (Richtwert 30.- bis 50.-) zu überweisen: 
 
-Parkplätze sind vorhanden.
+CH10 0873 1551 1615 1200 1, 
+Gönnerverein Freie Schule Bergmeilen, 
+8707 Uetikon am See
