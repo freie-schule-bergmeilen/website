@@ -2,9 +2,9 @@
 kind: event
 templateKey: event
 layout: event
-path: /einblicksmorgen-may
+path: /einblicksmorgen-sep
 title: Einblicksmorgen
-date: 2020-05-18T07:30:57.888Z
+date: 2019-09-23T07:30:18.381Z
 ---
 Am Einblicksmorgen haben interessierte Eltern Gelegenheit, den Alltag in unserer Schule mitzuerleben. Nach einer kurzen Einführung können Basis- und Primarstufe besucht werden. Im Anschluss gibt es die Möglichkeit, Fragen zu stellen und sich über die Eindrücke auszutauschen.
 
