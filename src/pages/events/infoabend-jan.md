@@ -2,7 +2,7 @@
 kind: event
 templateKey: event
 path: /einblicksmorgen-jan
-title: Einblicksmorgen
+title: Einblicksmorgen Januar
 date: 2020-03-09T08:30:00.000Z
 pin: true
 ---
