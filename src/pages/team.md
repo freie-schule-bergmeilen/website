@@ -3,8 +3,14 @@ templateKey: team
 path: /team
 title: Team
 teamGroups:
-  - intro: ''
-    positionType: Schulleitung
+  - intro: >-
+      Wir haben die Schule 2016 zu viert gegründet und treten mit dem Verein
+      Freie Schule Bergmeilen als Trägerschaft auf.
+
+
+      Die Schulleitung im Alltag übernehmen wir (Martina Kunz und Karin Escher)
+      zu zweit. Wir treffen möglichst viele Entscheidungen im Team.
+    positionType: Schulleitung und Trägerschaft
     teamMembers:
       - children:
           - name: Jael
@@ -13,7 +19,7 @@ teamGroups:
             year: '2015'
         experience: ' Spielgruppenleiterin Zertifikat SSLV, Drogistin HF mit mehrjähriger Erfahrung im praxisnahen Unterrichten von Berufsschülern (überbetriebliche Kurse Drogisten), Basisworkshop Original Play'
         image: /img/karin.jpg
-        position: 'Lernbegleiterin, Administration, Personal'
+        position: 'Lernbegleiterin Basisstufe und Sekundarstufe, Administration, Personal'
         positionType: Schulleitung
         title: Karin Escher
       - children:
@@ -31,7 +37,7 @@ teamGroups:
           Gesundheits-und Bewegungsprojekten in Zusammenarbeit mit Samowar
           Meilen, Kursleiterin Eltern-Kind Tanzen & Singen / Kindertanzen.
         image: /img/martina-1024x575.jpg
-        position: 'Lernbegleiterin, Pädagogische Verantwortung Kindergarten'
+        position: Lernbegleiterin Primar- und Sekundarstufe
         positionType: Schulleitung
         title: Martina Kunz Guggenbühl
       - children:
@@ -44,9 +50,7 @@ teamGroups:
           Mittelstufe, Elektroniker, Tontechniker, Betriebsleiter,
           Weiterbildung: Elternbildung in integrativer Erziehung
         image: /img/michael-2.jpg
-        position: >-
-          Lernbegleiter, Pädagogische Verantwortung Primarstufe,
-          Technik/Infrastruktur
+        position: 'Lernbegleiter Primarstufe, Technik/Infrastruktur'
         positionType: Schulleitung
         title: Michael Guggenbühl
       - children:
@@ -59,7 +63,10 @@ teamGroups:
         position: 'Lernbegleiterin, Datenplanung (Schnupperdaten), Anlässe'
         positionType: Schulleitung
         title: Irene Pfenninger
-  - positionType: Lernbegleiter
+  - intro: >-
+      Wir Lernbegleiter schaffen einen Raum, in dem sich Kinder sicher fühlen,
+      so dass sie sich frei und in Eigeninitiative entfalten können.
+    positionType: Lernbegleiter
     teamMembers:
       - experience: Kindergarten-/ Unterstufenlehrperson
         image: /img/monique_sommer.jpg
@@ -77,14 +84,6 @@ teamGroups:
         position: Lernbegleiterin Kindergarten und Primarstufe
         positionType: Team
         title: Claudia Scheiwiller
-      - children:
-          - name: Jael
-            year: '2013'
-          - name: Arjen
-            year: '2015'
-        experience: Primarlehrperson
-        position: Lernbegleiterin Primarstufe
-        title: Jeannine van Puijenbroek
       - children:
           - name: Sia
             year: '2012'
