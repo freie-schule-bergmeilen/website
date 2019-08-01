@@ -56,11 +56,13 @@ teamGroups:
       - children:
           - name: Navin
             year: '2012'
+          - name: Ainara
+            year: '2018'
         experience: >-
           Sozialpädagogin (HF Agogis), langjährige Berufserfahrung mit Kindern
           und Jugendlichen mit herausforderndem Verhalten
         image: /img/irene-e1448835722886.jpg
-        position: 'Lernbegleiterin, Datenplanung (Schnupperdaten), Anlässe'
+        position: 'Sekretariat, Lernbegleitung Primarstufe'
         positionType: Schulleitung
         title: Irene Pfenninger
   - intro: >-
