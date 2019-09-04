@@ -27,3 +27,5 @@ Sternschnuppenangebote bereichern unseren Lernalltag. Dies sind Angebote in vers
 Ausflüge und Projekttage sind wichtige Elemente innerhalb des Schuljahres. Wir beziehen die Kinder bei der Auswahl und Planung mit ein.
 
 Bei uns gibt es keine zeitlich festgelegten Pausen. Die Kinder haben jederzeit die Möglichkeit nach draussen zu gehen und ihrem Bedürfnis nach Bewegung Raum zu geben.
+
+**Unsere Primarstufe ist Mo/Di/Do/Fr von 8:30 bis 16:00 geöffnet.**
