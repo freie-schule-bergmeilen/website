@@ -10,22 +10,19 @@ order: '0'
 
 <mailto:info@freie-schule-bergmeilen.ch>
 
-
-
 ## Telefon
 
 Montag und Dienstag von 8.30 bis 11.30, Irene Pfenninger
 
 <a href="tel:079 697 48 01">079 697 48 01</a> 
 
-Donnerstag von 8-10 Uhr, Martina Kunz
+Ein Telefontermin ausserhalb dieser Zeiten kann per email oder sms vereinbart werden.
 
-<a href="tel:055 534 03 88">055 534 03 88</a> oder 
-<a href="tel:078 862 78 00">078 862 78 00</a>
+
 
 ## SMS
 
-Sollten wir einmal nicht erreichbar sein, bitten wir um eine Nachricht per SMS.
+Sollten wir einmal nicht erreichbar sein, bitten wir um eine Nachricht per SMS an Irene Pfenninger.
 
 ## Adresse
 
