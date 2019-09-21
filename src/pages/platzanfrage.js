@@ -142,7 +142,7 @@ const ReservationForm = withFormik({
       pointerEvents: isSubmitting ? 'none' : undefined,
     }}
   >
-    <h2 className="title is-size-3">Platzreservation</h2>
+    <h2 className="title is-size-3">Platzanfrage</h2>
     <div className="content">
     <form
       onSubmit={handleSubmit}
@@ -154,9 +154,7 @@ const ReservationForm = withFormik({
       data-netlify-honeypot="bot-trap"
     >
     <p>
-    Mit diesem Formular haben Sie die Möglichkeit, einen Kindergarten- oder Primarschulplatz in der
-    FREIEN SCHULE Bergmeilen zu reservieren. Um gegenseitige Erwartungen zu klären führen wir
-    Schnuppertage und vor der definitiven Anmeldung ein Elterngespräch durch.
+    Nach Erhalt eurer Angaben melden wir uns, um das weitere Vorgehen festzulegen. Für Kindergarten/Basisstufe besteht die Möglichkeit, max 2 Jahre vor Beginn der Schulpflicht einen Platz reservieren zu lassen. Mit einer Reservation entsteht kein Anspruch auf einen Platz.
     </p>
 
     <input type="hidden" name="form-name" value="reservation" />
@@ -199,8 +197,9 @@ const ReservationForm = withFormik({
                   name="stufe"
                   className="select"
                 >
-                  <option value="Primarschule">der Primarschule</option>
                   <option value="Kindergarten">im Kindergarten</option>
+                  <option value="Primarschule">der Primarschule</option>
+                  <option value="Sekundarstufe">Sekundarstufe</option>
                 </Field>
               </span>
           </p>
@@ -358,15 +357,7 @@ const ReservationForm = withFormik({
     <div className="content">
 
       <p>
-        Die Reservation ist kostenlos und für beide Seiten unverbindlich. Eine Schnupperwoche wird unabhängig von einem
-        Vertragsabschluss mit Fr. 500.- pro Familie verrechnet. Ein Anmeldegespräch wird sofern kein
-        Vertragsabschluss zustande kommt mit Fr. 80.- verrechnet. Bei Vertragsabschluss ist das
-        Anmeldegespräch kostenlos.
-      </p>
-
-      <p>
-        Nach Erhalt des Reservationsformulars nehmen wir mit Ihnen Kontakt auf, um das weitere Vorgehen
-        zu besprechen.
+        Eine Anfrage ist kostenlos und für beide Seiten unverbindlich.
       </p>
 
     </div>
@@ -417,7 +408,7 @@ const ReservationForm = withFormik({
 export default () =>
   <section className="section">
     <Helmet>
-      <title>Platzreservation</title>
+      <title>Platzanfrage</title>
     </Helmet>
 
     <ReservationForm />

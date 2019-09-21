@@ -8,7 +8,7 @@
     {
       "title": "Angebot",
       "items": [
-        { "path": "/reservation", "title": "Platzreservation", "order": 9999 }
+        { "path": "/platzanfrage", "title": "Platzanfrage", "order": 9999 }
       ]
     },
     {
