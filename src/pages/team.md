@@ -17,7 +17,7 @@ teamGroups:
             year: '2012'
           - name: Louis
             year: '2015'
-        experience: ' Spielgruppenleiterin Zertifikat SSLV, Drogistin HF mit mehrjähriger Erfahrung im praxisnahen Unterrichten von Berufsschülern (überbetriebliche Kurse Drogisten), Basisworkshop Original Play'
+        experience: ' Spielgruppenleiterin Zertifikat SSLV, Drogistin HF mit mehrjähriger Erfahrung im praxisnahen Unterrichten von Berufsschülern (überbetriebliche Kurse Drogisten)'
         image: /img/karin.jpg
         position: 'Lernbegleiterin Basisstufe und Sekundarstufe, Administration, Personal'
         positionType: Schulleitung
