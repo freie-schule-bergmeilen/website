@@ -36,7 +36,7 @@ teamGroups:
           Praktikum Montessori - Kindergarten. Entwicklung und Durchführung von
           Gesundheits-und Bewegungsprojekten in Zusammenarbeit mit Samowar
           Meilen, Kursleiterin Eltern-Kind Tanzen & Singen / Kindertanzen.
-        image: /img/martina-1024x575.jpg
+        image: /img/martina_kunz.jpg
         position: Lernbegleiterin Primar- und Sekundarstufe
         positionType: Schulleitung
         title: Martina Kunz Guggenbühl
