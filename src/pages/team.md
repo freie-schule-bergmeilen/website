@@ -19,7 +19,7 @@ teamGroups:
             year: '2015'
         experience: ' Spielgruppenleiterin Zertifikat SSLV, Drogistin HF mit mehrjähriger Erfahrung im praxisnahen Unterrichten von Berufsschülern (überbetriebliche Kurse Drogisten)'
         image: /img/karin.jpg
-        position: 'Lernbegleiterin Basisstufe und Sekundarstufe, Administration, Personal'
+        position: 'Stufenleitung Kindergarten/Basisstufe, Schulleitung'
         positionType: Schulleitung
         title: Karin Escher
       - children:
@@ -37,7 +37,7 @@ teamGroups:
           Gesundheits-und Bewegungsprojekten in Zusammenarbeit mit Samowar
           Meilen, Kursleiterin Eltern-Kind Tanzen & Singen / Kindertanzen.
         image: /img/martina_kunz.jpg
-        position: Lernbegleiterin Primar- und Sekundarstufe
+        position: 'Stufenleitung Primar- und Sekundarstufe, Schulleitung'
         positionType: Schulleitung
         title: Martina Kunz Guggenbühl
       - children:
@@ -50,7 +50,7 @@ teamGroups:
           Mittelstufe, Elektroniker, Tontechniker, Betriebsleiter,
           Weiterbildung: Elternbildung in integrativer Erziehung
         image: /img/michael-2.jpg
-        position: 'Lernbegleiter Primarstufe, Technik/Infrastruktur'
+        position: 'Primarstufe, Technik/Infrastruktur'
         positionType: Schulleitung
         title: Michael Guggenbühl
       - children:
@@ -62,7 +62,7 @@ teamGroups:
           Sozialpädagogin (HF Agogis), langjährige Berufserfahrung mit Kindern
           und Jugendlichen mit herausforderndem Verhalten
         image: /img/irene-e1448835722886.jpg
-        position: 'Sekretariat, Lernbegleitung Primarstufe'
+        position: 'Primarstufe, Sekretariat'
         positionType: Schulleitung
         title: Irene Pfenninger
   - intro: >-
