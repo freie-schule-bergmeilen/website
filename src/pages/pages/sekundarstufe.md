@@ -23,4 +23,4 @@ Unsere Sekundarstufe ist ideal für Jugendliche aus Freilernschulen oder aus fre
 
 Während ihrer Schulzeit entwickeln die Jugendlichen Fähigkeiten und Eigenschaften, die für ihren Weg ins Berufsleben wertvoll sind wie z.B. Sozialkompetenz, Teamfähigkeit, Kreatives/Vernetztes Denken und Neugier.
 
-Unsere Sekundarstufe ist am Mo/Di/Do und Freitag geöffnet.
+Unsere Sekundarstufe ist am Mo/Di/Do/ Fr geöffnet.
