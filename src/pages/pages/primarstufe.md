@@ -16,9 +16,11 @@ carousel:
   - image: /img/20180208_132938.jpg
   - image: /img/20181101_150008.jpg
 ---
-In der Primarstufe ist das Spiel immer noch ein wichtiger Teil im Lernalltag. In selber gestalteten Spielsituationen wird gerechnet, geschrieben, verhandelt, gewogen, diskutiert, kreiiert und nach Lösungen gesucht. 
+"(Fast) jedes Wesen spielt, um zu lernen!"
 
-Die Lernbegleiter begleiten und unterstützen das Kind dabei, seinen Interessen zu folgen, sich in selbstgewählte Lerninhalte zu vertiefen und sich Kompetenzen zu erwerben, welche seiner Reife entsprechen. Wo immer möglich gewähren wir es dem Kind, Lösungen selbst zu finden, Konflikte selber zu lösen und Ursachen selbständig zu ergründen. Wir helfen da, wo es Hilfe braucht, im Sinne von "hilf mir es selbst zu tun". Ist ein Kind oder eine Gruppe von Kindern mitten in einem wichtigen Lernprozess, halten wir uns zurück und greifen nach Möglichkeit nicht ein. Es gibt genügend andere Gelegenheiten, mit den Kindern Beziehung zu pflegen und sie im Lernen zu begleiten. 
+Im Lauf der Entwicklung wandelt sich das Spiel. Unsere Primarschüler lernen spielend - in selber gestalteten Spielsituationen wird gerechnet, geschrieben, verhandelt, gewogen, diskutiert, kreiiert und nach Lösungen gesucht. 
+
+Die Erwachsenen begleiten und unterstützen das Kind dabei, seinen Interessen zu folgen, sich in selbstgewählte Lerninhalte zu vertiefen und sich Kompetenzen zu erwerben, welche seiner Reife entsprechen. Wo immer möglich, gewähren wir es dem Kind, Lösungen selbst zu finden, Konflikte selber zu lösen und Ursachen selbständig zu ergründen. Wir helfen da, wo es Hilfe braucht, im Sinne von "hilf mir es selbst zu tun". 
 
 In der vielfältig gestalteten Lernlandschaft begegnet das Kind diversen Materialien, welche es für den Erwerb von Kompetenzen nach Lehrplan 21 braucht. Darin enthalten sind auch Montessori-Lernmaterialien und die offiziellen Lehrmittel des Kantons Zürich.
 
