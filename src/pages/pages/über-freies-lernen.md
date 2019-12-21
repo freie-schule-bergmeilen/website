@@ -12,4 +12,4 @@ Kinder suchen von Natur aus multisensorische Erfahrungen, welche es ihnen ermög
 \
 Kinder können sehr schnell lernen, wenn sie etwas Interessantes entdecken. Jedes Kind lernt zu einem anderen Zeitpunkt und in seinem Tempo. Das freie Lernen möchte dem gerecht werden.
 
-Freies Lernen erfordert von Eltern und Lernbegleitern sehr viel Vertrauen in das Kind und seinen Weg. Es ist sehr wichtig, dass die Eltern das Konzept unserer Schule mittragen und sich mit den Themen rund um freies Lernen immer wieder auseinandersetzen.
+Freies Lernen erfordert von den Erwachsenen (Eltern und Team) sehr viel Vertrauen in das Kind und seinen Weg. Es ist sehr wichtig, dass die Eltern das Konzept unserer Schule mittragen und sich mit den Themen rund um freies Lernen immer wieder auseinandersetzen.
