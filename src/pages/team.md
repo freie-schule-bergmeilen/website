@@ -66,13 +66,13 @@ teamGroups:
         positionType: Schulleitung
         title: Irene Pfenninger
   - intro: >-
-      Wir Lernbegleiter schaffen einen Raum, in dem sich Kinder sicher fühlen,
-      so dass sie sich frei und in Eigeninitiative entfalten können.
-    positionType: Lernbegleiter
+      Wir Erwachsenen schaffen einen Raum, in dem sich Kinder sicher fühlen, so
+      dass sie sich frei und in Eigeninitiative entfalten können.
+    positionType: Team
     teamMembers:
       - experience: Kindergarten-/ Unterstufenlehrperson
         image: /img/monique_sommer.jpg
-        position: Lernbegleiterin Kindergarten
+        position: Kindergarten/Basisstufe
         positionType: Team
         title: Monique Sommer
       - children:
@@ -83,7 +83,7 @@ teamGroups:
           - name: Lucie
             year: '2013'
         experience: 'Kindergartenlehrperson, Heilpädagogin'
-        position: Lernbegleiterin Kindergarten und Primarstufe
+        position: Kindergarten/Basisstufe
         positionType: Team
         title: Claudia Scheiwiller
       - children:
@@ -98,7 +98,7 @@ teamGroups:
           Weiterbildungen gewaltfreie Kommunikation nach Rosenberg und  natives
           Lernen
         image: /img/marina.jpg
-        position: Lernbegleiterin
+        position: Kindergarten/Basistufe/Primarstufe
         positionType: Team
         title: Marina Maffei
       - children:
@@ -108,12 +108,12 @@ teamGroups:
             year: '2013'
         experience: Sportlehrer und Künstler
         image: /img/daniel_schibli.jpg
-        position: Lernbegleiter
+        position: 'Werken im Wald und im Schulhaus, Sport'
         positionType: Team
         title: Daniel Schibli
       - experience: 'Osteopath D.O:'
         image: /img/ben_lobmaier.jpg
-        position: Englisch Lernbegleiter
+        position: Englisch
         positionType: Team
         title: Ben Lobmaier
 ---
