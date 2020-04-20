@@ -40,9 +40,9 @@ export default function Template({ data }) {
           <PhotoGallery
             renderImage={renderImage}
             photos={
-              post.frontmatter.images.map(({
-                image: { childImageSharp: { sizes }}
-              }) => {
+              post.frontmatter.images
+                .filter(({ image }) => image != null)
+                .map(({  image: { childImageSharp: { sizes }}}) => {
                 const { aspectRatio, src, srcSet } = sizes
                 return {
                   width: aspectRatio, height: 1, src,
