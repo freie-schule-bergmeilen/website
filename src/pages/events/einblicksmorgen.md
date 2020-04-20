@@ -4,8 +4,12 @@ templateKey: event
 layout: event
 path: /einblicksmorgen-mai-20
 title: Einblicksmorgen Mai 2020
-date: 2020-05-18T07:30:15.242Z
+date: 2020-05-25T07:30:15.242Z
 ---
+*Hinweis betreffend Corona-Situation: Wir rechnen damit, dass wir den Schulbetrieb am 11.Mai wieder aufnehmen können. Aktuell warten wir auf die Empfehlungen des Volksschulamtes (Schutzkonzept, Hygienemassnahmen). Der Einblick in den Schulalltag kann sich aufgrund der Weisungen vom regulären FSB-Alltag unterscheiden. Wir hoffen, den Einblicksmorgen am 25. Mai wie gewohnt durchführen zu können. Über allfällige Anpassungen informieren wir kurzfristig.*
+
+
+
 Am Einblicksmorgen haben interessierte Eltern Gelegenheit, den Alltag in unserer Schule mitzuerleben. Nach einer kurzen Einführung können Basis- und Primarstufe besucht werden. Im Anschluss gibt es die Möglichkeit, Fragen zu stellen und sich über die Eindrücke auszutauschen.
 
 **Ankunft: 9:30**
@@ -18,6 +22,5 @@ Ende des Einblickmorgens: 12:00
 
 Für interessierte Eltern ist der Einblicksmorgen kostenlos. Berufskollegen und Interessierte bitten wir, uns für den Einblicksmorgen einen Unterstützungsbeitrag (Richtwert 30.- bis 50.-) zu überweisen: 
 
-CH10 0873 1551 1615 1200 1, 
-Gönnerverein Freie Schule Bergmeilen, 
+CH10 0873 1551 1615 1200 1,  Gönnerverein Freie Schule Bergmeilen, 
 8707 Uetikon am See
