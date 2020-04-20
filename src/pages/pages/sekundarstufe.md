@@ -6,10 +6,10 @@ title: Sekundarstufe
 section: Angebot
 order: 0
 carousel:
-  - image: /img/20170831_114740.jpg
+  - image: /img/20190606_112018.jpg
   - image: /img/20190523_100821.jpg
-  - image: /img/20170905_110932.jpg
   - image: /img/20181029_125636.jpg
+  - image: /img/20190906_133509.jpg
 ---
 Ab Schuljahr 2019/20 bieten wir eine Sekundarstufe an.
 
