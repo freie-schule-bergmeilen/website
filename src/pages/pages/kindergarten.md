@@ -4,12 +4,14 @@ templateKey: page
 path: /kindergarten
 title: Kindergarten/Basisstufe
 section: Angebot
-order: '0'
+order: "0"
 carousel:
-  - image: /img/20170907_093724.jpg
-  - image: /img/20190514_115504.jpg
-  - image: /img/20181030_095407.jpg
+  - image: /img/20191204-175313-dce3f67d467044d9.jpg
+  - image: /img/20191204-175327-4172f8849f8904f0.jpg
+  - image: /img/img_20191001_115853.jpg
   - image: /img/20190328_151628.jpg
+  - image: /img/20190527_141933-1-.jpg
+  - image: /img/abc_basisstufe.jpg
 ---
 Lernen durch "Selber-Tun"!
 
