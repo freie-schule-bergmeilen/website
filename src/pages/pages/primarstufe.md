@@ -4,17 +4,15 @@ templateKey: page
 path: /primarstufe
 title: Primarstufe
 section: Angebot
-order: '0'
+order: "0"
 carousel:
-  - image: /img/20171107_134754.jpg
-  - image: /img/20160913_124840_Richtone(HDR).jpg
-  - image: /img/20161212_103803.jpg
-  - image: /img/20170428_182534.jpg
-  - image: /img/20180903_151502.jpg
-  - image: /img/20171109_124346.jpg
-  - image: /img/20171026_101224.jpg
-  - image: /img/20180208_132938.jpg
-  - image: /img/20181101_150008.jpg
+  - image: /img/img_20190916_134620.jpg
+  - image: /img/20191119_151913.jpg
+  - image: /img/20190411_104619.jpg
+  - image: /img/20190903_141131.jpg
+  - image: /img/img_20190927_104257.jpg
+  - image: /img/img_20190830_084227.jpg
+  - image: /img/img_20190916_134556.jpg
 ---
 "(Fast) jedes Wesen spielt, um zu lernen!"
 
