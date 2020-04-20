@@ -12,6 +12,8 @@ carousel:
   - image: /img/20190328_151628.jpg
   - image: /img/20190527_141933-1-.jpg
   - image: /img/abc_basisstufe.jpg
+  - image: /img/20190820_084325.jpg
+  - image: /img/img_20190822_152505.jpg
 ---
 Lernen durch "Selber-Tun"!
 
