@@ -3,24 +3,19 @@ kind: event
 templateKey: event
 layout: event
 path: /einblicksmorgen-mai-20
-title: Einblicksmorgen Mai 2020
+title: Einblicksmorgen Mai 2020 - Findet nicht statt!
 date: 2020-05-25T07:30:15.242Z
 ---
-*Hinweis betreffend Corona-Situation: Wir rechnen damit, dass wir den Schulbetrieb am 11.Mai wieder aufnehmen können. Aktuell warten wir auf die Empfehlungen des Volksschulamtes (Schutzkonzept, Hygienemassnahmen). Der Einblick in den Schulalltag kann sich aufgrund der Weisungen vom regulären FSB-Alltag unterscheiden. Wir hoffen, den Einblicksmorgen am 25. Mai wie gewohnt durchführen zu können. Über allfällige Anpassungen informieren wir kurzfristig.*
+*Liebe Interessenten/Interessentinnen*
 
+*Wir können unseren Schulalltag am 11. Mai wieder aufnehmen.* 
 
+*Der Bund schreibt uns vor, dass unter Erwachsenen weiterhin 2 Meter Abstand zu gewährleisten sind.*
 
-Am Einblicksmorgen haben interessierte Eltern Gelegenheit, den Alltag in unserer Schule mitzuerleben. Nach einer kurzen Einführung können Basis- und Primarstufe besucht werden. Im Anschluss gibt es die Möglichkeit, Fragen zu stellen und sich über die Eindrücke auszutauschen.
+*Diese Vorgabe verunmöglicht die Durchführung des Einblicksmorgens.*
 
-**Ankunft: 9:30**
+*Bitte nehmt per Email Kontakt mit uns auf, sofern ihr Interesse an einem Schulplatz für das kommende Schuljahr habt. In einzelnen Stufen haben wir noch wenige freie Plätze.*
 
-Ende des Einblickmorgens: 12:00
+*Wir vereinbaren sehr gerne einen individuellen Besuchstermin, einen Telefon- oder Skype-/Zoomtermin mit euch.*
 
-**Die Anzahl Plätze für den Einblicksmorgen sind beschränkt. Wir bitten um verbindliche Anmeldung per email: info@freie-schule-bergmeilen.ch**
-
-**Der Einblicksmorgen ist ein Anlass für Erwachsene. Es ist nicht möglich, Kinder mitzunehmen.** Damit Kinder unsere Schule kennenlernen können, werden individuelle Schnupperwochen vereinbart. Wir empfehlen Eltern, vorgängig einen Einblicksmorgen oder einen Informationsabend zu besuchen.
-
-Für interessierte Eltern ist der Einblicksmorgen kostenlos. Berufskollegen und Interessierte bitten wir, uns für den Einblicksmorgen einen Unterstützungsbeitrag (Richtwert 30.- bis 50.-) zu überweisen: 
-
-CH10 0873 1551 1615 1200 1,  Gönnerverein Freie Schule Bergmeilen, 
-8707 Uetikon am See
+*Herzlichen Dank für euer Verständnis!*
