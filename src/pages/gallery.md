@@ -31,7 +31,42 @@ images:
   - image: /img/img_20190916_134556.jpg
   - image: /img/img_20190916_134620.jpg
   - image: /img/img_20190927_104257.jpg
-  - image: /img/20180604_115232.jpg
-  - image: /img/20181106_100725.jpg
+  - image: /img/20170123_083351.jpg
+  - image: /img/20171026_101224.jpg
+  - image: /img/20161031_150311.jpg
+  - image: /img/20171109_103658.jpg
+  - image: /img/20171109_120337.jpg
+  - image: /img/20171109_103936.jpg
+  - image: /img/20180827_145956.jpg
+  - image: /img/20180903_151502.jpg
+  - image: /img/20180628_113745.jpg
+  - image: /img/20180628_134203.jpg
+  - image: /img/20180608_113959.jpg
+  - image: /img/20180911_091639.jpg
+  - image: /img/20180920_144248.jpg
+  - image: /img/20181023_110109.jpg
+  - image: /img/20181129_151527.jpg
+  - image: /img/20190411_104619.jpg
+  - image: /img/20190328_151628.jpg
+  - image: /img/20190523_100821.jpg
+  - image: /img/20190820_084325.jpg
+  - image: /img/20200121_134443.jpg
+  - image: /img/20181213_082758_richtone-hdr-.jpg
+  - image: /img/20190819_112634.jpg
+  - image: /img/20190827_143546.jpg
+  - image: /img/20191216_103841.jpg
+  - image: /img/img_20190620_085138.jpg
+  - image: /img/img_20190625_114654.jpg
+  - image: /img/img_20190627_134842.jpg
+  - image: /img/img_20190708_104406.jpg
+  - image: /img/img_20190820_114907.jpg
+  - image: /img/img_20191105_141557.jpg
+  - image: /img/img_20191115_141457.jpg
+  - image: /img/z.jpg
+  - image: /img/img_20191119_155534.jpg
+  - image: /img/img_20191004_151025.jpg
+  - image: /img/img_20191119_144001.jpg
+  - image: /img/img_20191114_132818.jpg
+  - image: /img/20191126_122655.jpg
 ---
 ### Aus dem Schulalltag
