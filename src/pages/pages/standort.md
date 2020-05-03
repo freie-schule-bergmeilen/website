@@ -4,13 +4,23 @@ templateKey: page
 path: /standort
 title: Standort
 section: Über uns
-order: '0'
+order: "0"
+carousel:
+  - image: /img/wegweiser.jpg
+  - image: /img/fsb002.jpg
+  - image: /img/sandkasten.jpg
+  - image: /img/sandkasten2.jpg
+  - image: /img/insektenhotel.jpg
+  - image: /img/brunnen.jpg
+  - image: /img/velo.jpg
+  - image: /img/löwenzahl.jpg
+  - image: /img/pausenplatz.jpg
 ---
-Unser schönes, altes Bergschulhaus befindet sich idyllisch gelegen zwischen dem Zürichsee und dem Pfannenstihl.  Mitten in der Natur bietet es Raum zum Entdecken, sich Bewegen, Spielen und Verweilen. 
+Unser schönes, altes Bergschulhaus befindet sich idyllisch gelegen zwischen dem Zürichsee und dem Pfannensteil.  Mitten in der Natur bietet es Raum zum Entdecken, Bewegen, Spielen und Verweilen. 
 
 Unser Waldplatz, sowie umliegende Bauernhöfe, bieten uns zusätzlichen Bewegungs-und Entdeckungsraum.
 
-Unser Schulhaus liegt an der Toggwilerstrasse in Meilen:
+Unser Schulhaus liegt an der Toggwilerstrasse 154 in Meilen:
 
 <p>
   <iframe 
