@@ -4,7 +4,7 @@ templateKey: page
 path: /schulgeld
 title: Schulgeld
 section: Angebot
-order: 4
+order: 0
 ---
 Die erwähnten Tarife gelten für Familien. Tarife für Institutionen (SPD, Gemeinden u.a.) werden separat berechnet.
 
