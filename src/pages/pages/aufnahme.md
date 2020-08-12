@@ -4,7 +4,7 @@ templateKey: page
 path: /aufnahme
 title: Aufnahme
 section: Angebot
-order: '100'
+order: '5'
 carousel:
   - image: /img/abc_basisstufe.jpg
 ---

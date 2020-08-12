@@ -4,7 +4,7 @@ templateKey: page
 path: /primarstufe
 title: Primarstufe
 section: Angebot
-order: "0"
+order: "2"
 carousel:
   - image: /img/img_20190916_134620.jpg
   - image: /img/20191119_151913.jpg

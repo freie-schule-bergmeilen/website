@@ -4,7 +4,7 @@ templateKey: page
 path: /kindergarten
 title: Kindergarten/Basisstufe
 section: Angebot
-order: "0"
+order: "1"
 carousel:
   - image: /img/20191204-175313-dce3f67d467044d9.jpg
   - image: /img/20191204-175327-4172f8849f8904f0.jpg
