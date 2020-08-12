@@ -148,6 +148,11 @@ export default class Nav extends PureComponent {
 
 
             <div style={{ display: 'flex', marginLeft: 25 }}>
+              <a className="navbar-item" href="https://www.facebook.com/Freie-Schule-Bergmeilen-502505593264330/" target="_blank" rel="noopener">
+              <span className="icon">
+                <i className="fa fa-lg fa-facebook-official"/>
+              </span>
+              </a>
               <a
                 className="navbar-item"
                 onClick={this.handleClickAdmin}
@@ -156,16 +161,6 @@ export default class Nav extends PureComponent {
                 <i className="fa fa-lg fa-lock"
                    style={{ position: 'relative', top: 1, }}
                 />
-              </span>
-              </a>
-              <a className="navbar-item" href="https://forum.freie-schule-bergmeilen.ch/" target="_blank" rel="noopener">
-              <span className="icon">
-                <i className="fa fa-lg fa-comments"/>
-              </span>
-              </a>
-              <a className="navbar-item" href="https://www.facebook.com/Freie-Schule-Bergmeilen-502505593264330/" target="_blank" rel="noopener">
-              <span className="icon">
-                <i className="fa fa-lg fa-facebook-official"/>
               </span>
               </a>
             </div>
