@@ -23,17 +23,3 @@ Wer an einem Schulplatz interessiert ist, geht folgendermassen vor:
 
 Ein Einstieg in unsere Schule ist während dem laufenden Schuljahr möglich.
 
-
-<div class="box" style="text-align:center">
-  <a 
-    class="button is-info is-large"
-    href="/docs/Elterninfo_FSBergmeilen.pdf"
-    target="_blank"
-    rel="noopener"
-   >
-    <span class="icon is-medium">
-        <i class="fa fa-download"></i>
-      </span>
-    <span>Infobroschüre</span>
-  </a>
-</div>
