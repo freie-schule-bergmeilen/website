@@ -25,7 +25,7 @@ Unser Schulhaus liegt an der Toggwilerstrasse 154 in Meilen:
 <p>
   <iframe 
   width="100%" height="450" frameborder="0" style="border:0" allowfullscreen
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAOWc-ghIk6gXsCltiy7YPzmSGZybODIMQ&q=Freie Schule Bergmeilen&zoom=19&language=de&maptype=satellite"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAWmJ842L5xD74g5T4TLaor5b-j7XJlxEY&q=Freie Schule Bergmeilen&zoom=19&language=de&maptype=satellite"
   ></iframe> 
 </p>
  
@@ -39,7 +39,7 @@ Mit dem Auto sind wir vom Bahnhof Meilen in 7 Minuten erreichbar.
     width="100%"
     height="450"
     frameborder="0" style="border:0"
-    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAOWc-ghIk6gXsCltiy7YPzmSGZybODIMQ&q=Freie Schule Bergmeilen&zoom=11&language=de">
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAWmJ842L5xD74g5T4TLaor5b-j7XJlxEY&q=Freie Schule Bergmeilen&zoom=11&language=de">
   </iframe>
 </p>
 
