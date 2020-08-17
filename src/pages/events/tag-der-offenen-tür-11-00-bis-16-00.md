@@ -3,17 +3,19 @@ kind: event
 templateKey: event
 layout: event
 path: /tag-der-offenen-tuer-2020
-title: Tag der offenen Tür 11:00 bis 16:00
-date: 2020-09-19T21:00:11.868Z
+title: "Tag der offenen Tür: Wird ersetzt durch Info-Veranstaltung"
+date: 2020-09-19T11:00:00.000Z
 ---
-Wir freuen uns auf viele grosse und kleine Besucher, die Lust haben, uns näher kennen zu lernen.
+Liebe Interessenten und Freunde
 
-Wie immer verwöhnen wir euch gerne mit Suppenstand, Kuchen- und Getränkebuffet (Getränke sind offeriert, der Erlös aus Suppen-/Kuchenverkauf fliesst in die Kasse für Lernmaterialien).
+Wir ersetzen den Tag der offenen Tür in diesem Herbst durch eine Info-Veranstaltung in kleinerem Rahmen und bitten euch um eine Anmeldung per Email.
 
-**Von 13:30 bis 14:30 findet eine Inforunde für interessierte Familien statt.** Hier bekommt ihr Infos zum Wochenplan, zum Aufnahmeverfahren, zu unserer Arbeitsweise und ihr habt die Möglichkeit, Fragen zu stellen. Für die Inforunde ist keine Anmeldung nötig.
+Eingeladen sind Familien, sowie Fachpersonen und Interessierte, die mehr über das freie Lernen an unserer Schule erfahren möchten.
 
-Bei Bedarf findet eine zweite Inforunde statt.
+Die Platzanzahl ist beschränkt, interessierte Familien haben Priorität.
 
-Wir empfehlen die Anreise mit ÖV (Haltestelle Chilchbüel/Bezibüel oder Hohenegg) ab Bahnhof Meilen.
+Wir hoffen, dass im kommenden Frühling wieder grössere Veranstaltungen ohne Schutzkonzept möglich sind, so dass wir dann unsere Türen ohne Einschränkungen öffnen können.
 
-Wenige Parkplätze sind entlang der Mittelbergstrasse vorhanden (ausgeschildert)
+Interessierte Menschen, denen Zeit/Datum der Infoveranstaltung nicht passen, dürfen sich gerne per Email bei uns melden.
+
+Aktuell sind fast alle Plätze in unserer Schule besetzt. Interessenten die bald einen Schulplatz benötigen, empfehlen wir, vorgängig per Email Kontakt mit uns aufzunehmen.
