@@ -12,7 +12,7 @@ Wir ersetzen den Tag der offenen Tür in diesem Herbst durch eine Info-Veranstal
 
 Eingeladen sind Eltern, sowie Fachpersonen und Interessierte, die mehr über das freie Lernen an unserer Schule erfahren möchten. Die Inforunden beantworten die wichtigsten Fragen rund um unsere Schule und beinhalten einen Rundgang durch die Schule.
 
-Die Platzanzahl ist beschränkt, interessierte Eltern haben Priorität.
+Die Platzanzahl ist beschränkt, interessierte Eltern haben Priorität. Der Anlass findet ohne Kinder statt (Für Babys im Tragetuch machen wir gerne eine Ausnahme).
 
 **Für den Besuch ist eine verbindliche Anmeldung per Email kunzmartina@gmx.ch nötig.**
 
