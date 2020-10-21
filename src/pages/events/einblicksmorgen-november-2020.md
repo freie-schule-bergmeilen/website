@@ -2,7 +2,7 @@
 kind: event
 templateKey: event
 layout: event
-path: /einblicksmorgen-november
+path: /einblicksmorgen-november-20
 title: Einblicksmorgen November 2020 - findet nicht statt!
 date: 2020-11-02T08:30:06.819Z
 ---
