@@ -6,7 +6,15 @@ path: /einblicksmorgen-january
 title: Einblicksmorgen Januar 2021
 date: 2021-01-18T08:30:39.342Z
 ---
-Am Einblicksmorgen haben interessierte Eltern Gelegenheit, den Alltag in unserer Schule mitzuerleben. Nach einer kurzen Einführung können alle Stufen besucht werden. Im Anschluss gibt es die Möglichkeit, Fragen zu stellen und sich über die Eindrücke auszutauschen.
+**Liebe Interessenten**
+
+**Derzeit ist es nicht einfach, vorauszuplanen. Wir behalten uns vor, den Einblicksmorgen kurzfristig abzusagen. In diesem Fall würden wir euch kontaktieren, um bei Bedarf einen individuellen Besuchstermin zu finden.**
+
+
+
+
+
+An unseren Einblicksmorgen haben interessierte Eltern Gelegenheit, den Alltag in unserer Schule mitzuerleben. Nach einer kurzen Einführung können alle Stufen besucht werden. Im Anschluss gibt es die Möglichkeit, Fragen zu stellen und sich über die Eindrücke auszutauschen.
 
 **Ankunft: 9:30**
 
