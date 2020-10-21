@@ -3,20 +3,13 @@ kind: event
 templateKey: event
 layout: event
 path: /einblicksmorgen-november
-title: Einblicksmorgen November 2020
+title: Einblicksmorgen November 2020 - findet nicht statt!
 date: 2020-11-02T08:30:06.819Z
 ---
-Am Einblicksmorgen haben interessierte Eltern Gelegenheit, den Alltag in unserer Schule mitzuerleben. Nach einer kurzen Einführung können alle Stufen besucht werden. Im Anschluss gibt es die Möglichkeit, Fragen zu stellen und sich über die Eindrücke auszutauschen.
+Liebe Interessenten
 
-**Ankunft: 9:30**
+Im Moment führen wir keine Veranstaltungen mit Gruppen durch.
 
-Ende des Einblickmorgens: 12:00
+Wir freuen uns, wenn ihr uns eine Email mit euren Kontaktdaten schreibt, damit wir euch anrufen können. Nach einem Anruf/Zoom/Skype vereinbaren wir bei Bedarf einen individuellen Besuchstermin mit euch.
 
-**Die Anzahl Plätze für den Einblicksmorgen sind beschränkt. Wir bitten um verbindliche Anmeldung per email: info@freie-schule-bergmeilen.ch**
-
-**Der Einblicksmorgen ist ein Anlass für Erwachsene. Es ist nicht möglich, Kinder mitzunehmen.** Damit Kinder unsere Schule kennenlernen können, werden individuelle Schnupperwochen vereinbart. Wir empfehlen Eltern, vorgängig einen Einblicksmorgen oder einen Informationsabend zu besuchen.
-
-Für interessierte Eltern ist der Einblicksmorgen kostenlos. Berufskollegen und Interessierte bitten wir, uns für den Einblicksmorgen einen Unterstützungsbeitrag (Richtwert 30.- bis 50.-) zu überweisen: 
-
-CH10 0873 1551 1615 1200 1,  Gönnerverein Freie Schule Bergmeilen, 
-8707 Uetikon am See
+Herzlichen Dank für euer Verständnis!
