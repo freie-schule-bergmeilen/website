@@ -4,7 +4,7 @@ templateKey: event
 layout: event
 path: /einblicksmorgen-march-21
 title: Einblicksmorgen März 2021
-date: 2021-03-15T12:52:43.319Z
+date: 2021-03-15T08:30:43.319Z
 ---
 Am Einblicksmorgen haben interessierte Eltern Gelegenheit, den Alltag in unserer Schule mitzuerleben. Nach einer kurzen Einführung können alle Stufen besucht werden. Im Anschluss gibt es die Möglichkeit, Fragen zu stellen und sich über die Eindrücke auszutauschen.
 
