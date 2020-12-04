@@ -10,7 +10,11 @@ Für alle, die Teil unserer Schule werden möchten, gibt es den **Gönnerverein 
 
 Der Gönnerverein ermöglicht der Freien Schule Bergmeilen Projekte wie Lager, Projektwochen und Exkursionen.
 
-Immer wieder stehen auch grössere Anschaffungen und Anpassungen der Infrastruktur an, welche mit der Unterstützung des Gönnervereins realisiert werden können. Langfristig besteht auch die Vision, für Familien mit tiefem Einkommen einen Schulplatz zu ermöglichen. 
+Immer wieder stehen auch grössere Anschaffungen und Anpassungen der Infrastruktur an, welche mit der Unterstützung des Gönnervereins realisiert werden können. 
+
+
+
+Langfristig besteht auch die Vision, für Familien mit tiefem Einkommen einen Schulplatz zu ermöglichen. 
 
 Wir danken euch für eure Unterstützung.
 
