@@ -8,7 +8,7 @@ teamGroups:
       Freie Schule Bergmeilen als Trägerschaft auf.
 
 
-      Die Schulleitung im Alltag übernehmen wir (Martina Kunz und Karin Escher) zu zweit. Wir treffen möglichst viele Entscheidungen im Team.
+      Die Schulleitung übernehmen wir (Martina Kunz und Karin Escher) zu zweit. Wir treffen möglichst viele Entscheidungen im Team.
     positionType: Schulleitung und Trägerschaft
     teamMembers:
       - children:
