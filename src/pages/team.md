@@ -67,11 +67,6 @@ teamGroups:
       dass sie sich frei und in Eigeninitiative entfalten können.
     positionType: Team
     teamMembers:
-      - experience: Kindergarten-/ Unterstufenlehrperson
-        image: /img/monique_sommer.jpg
-        position: Kindergarten/Basisstufe
-        positionType: Team
-        title: Monique Sommer
       - children:
           - name: Maira
             year: "2007"
@@ -97,6 +92,32 @@ teamGroups:
         position: Kindergarten/Basistufe/Primarstufe
         positionType: Team
         title: Marina Maffei
+      - experience: Kindergarten-/ Unterstufenlehrperson
+        image: /img/monique_sommer.jpg
+        position: Kindergarten/Basisstufe
+        positionType: Team
+        title: Monique Sommer
+      - positionType: Team
+        body: ""
+        title: Jeannine Puijenbroek
+        position: Mathematik Sekundarstufe
+        children:
+          - name: Jael
+            year: "2013"
+          - name: Arjen
+            year: "2015"
+      - positionType: Team
+        body: ""
+        title: Daniel Scheiwiller
+        position: Sekundarstufe
+        children:
+          - name: Maira
+            year: "2007"
+          - name: Miro
+            year: "2010"
+          - name: Lucie
+            year: "2013"
+        experience: Sekundarlehrperson, Heilpädagoge
       - experience: "Osteopath D.O:"
         image: /img/ben_lobmaier.jpg
         position: Englisch
@@ -122,13 +143,4 @@ teamGroups:
         position: Sporadische Projekte, Bogenschiessen
         positionType: Team
         title: Daniel Schibli
-      - positionType: Team
-        body: ""
-        title: Jeannine Puijenbroek
-        position: Mathematik Sekundarstufe
-        children:
-          - name: Jael
-            year: "2013"
-          - name: Arjen
-            year: "2015"
 ---
