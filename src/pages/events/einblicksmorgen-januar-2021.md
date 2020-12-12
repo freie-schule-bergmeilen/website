@@ -3,7 +3,7 @@ kind: event
 templateKey: event
 layout: event
 path: /einblicksmorgen-january
-title: Einblicksmorgen Januar 2021 - Findet nicht statt!
+title: "Einblicksmorgen Januar 2021 - Findet nicht statt! "
 date: 2021-01-18T08:30:39.342Z
 ---
 Liebe Interessenten
