@@ -20,7 +20,7 @@ teamGroups:
           mehrjähriger Erfahrung im praxisnahen Unterrichten von Berufsschülern
           (überbetriebliche Kurse Drogisten)"
         image: /img/karin.jpg
-        position: Stufenleitung Kindergarten/Basisstufe, Schulleitung
+        position: Stufenleitung Kindergarten/Basisstufe, Schulleitung, Sekretariat
         positionType: Schulleitung
         title: Karin Escher
       - children:
@@ -60,7 +60,7 @@ teamGroups:
         experience: Sozialpädagogin (HF Agogis), langjährige Berufserfahrung mit Kindern
           und Jugendlichen mit herausforderndem Verhalten
         image: /img/irene-e1448835722886.jpg
-        position: Primarstufe, Sekretariat
+        position: Mitgründerin, Mitdenkerin, Aushilfe
         positionType: Schulleitung
         title: Irene Pfenninger
   - intro: Wir Erwachsenen schaffen einen Raum, in dem sich Kinder sicher fühlen, so
