@@ -92,11 +92,24 @@ teamGroups:
         position: Kindergarten/Basistufe/Primarstufe
         positionType: Team
         title: Marina Maffei
-      - experience: Kindergarten-/ Unterstufenlehrperson
-        image: /img/monique_sommer.jpg
-        position: Kindergarten/Basisstufe
+      - experience: Primarlehrerin mit Erfahrung im heilpädagogischen Bereich,
+          diplomierter systemischer Coach und Beraterin (CTAS), Weiterbildung
+          als Lern-Coach (CTAS), nebenberuflich selbstständig als Aufräum-Coach,
+          Montessori-Pädagogin i.A.
+        image: /img/foto-yara.jpg
+        position: Primarstufe
         positionType: Team
-        title: Monique Sommer
+        title: Yara Kraettli
+      - positionType: Team
+        body: ""
+        title: Laurence Schneckenburger
+        position: Französisch Primar- und Sekundarstufe
+        image: /img/laurence_schneckenburger.jpg
+        children:
+          - name: xy
+            year: "2000"
+          - name: xxy
+            year: "2005"
       - positionType: Team
         body: ""
         title: Jeannine Puijenbroek
@@ -106,6 +119,11 @@ teamGroups:
             year: "2013"
           - name: Arjen
             year: "2015"
+      - experience: "Osteopath D.O:"
+        image: /img/ben_lobmaier.jpg
+        position: Englisch
+        positionType: Team
+        title: Ben Lobmaier
       - positionType: Team
         body: ""
         title: Daniel Scheiwiller
@@ -118,21 +136,6 @@ teamGroups:
           - name: Lucie
             year: "2013"
         experience: Sekundarlehrperson, Heilpädagoge
-      - experience: "Osteopath D.O:"
-        image: /img/ben_lobmaier.jpg
-        position: Englisch
-        positionType: Team
-        title: Ben Lobmaier
-      - positionType: Team
-        body: ""
-        title: Laurence Schneckenburger
-        position: Französisch Primar- und Sekundarstufe
-        image: /img/laurence_schneckenburger.jpg
-        children:
-          - name: xy
-            year: "2000"
-          - name: xxy
-            year: "2005"
       - children:
           - name: Manoah
             year: "2011"
