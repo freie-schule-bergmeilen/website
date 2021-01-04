@@ -4,7 +4,7 @@ templateKey: page
 path: /kontakt
 title: Kontakt
 section: Über uns
-order: '0'
+order: "0"
 ---
 ## E-Mail
 
@@ -12,7 +12,7 @@ order: '0'
 
 ## Telefon/sms
 
-Irene Pfenninger: <a href="tel:079 697 48 01">079 697 48 01</a> 
+Karin Escher: <a href="tel:076 405 16 34">076 405 16 34</a> 
 
 Ein Telefontermin  kann jederzeit per email oder sms vereinbart werden.
 
