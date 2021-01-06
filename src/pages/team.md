@@ -110,6 +110,11 @@ teamGroups:
             year: "2000"
           - name: xxy
             year: "2005"
+      - experience: "Osteopath D.O:"
+        image: /img/ben_lobmaier.jpg
+        position: Englisch
+        positionType: Team
+        title: Ben Lobmaier
       - positionType: Team
         body: ""
         title: Jeannine Puijenbroek
@@ -119,15 +124,10 @@ teamGroups:
             year: "2013"
           - name: Arjen
             year: "2015"
-      - experience: "Osteopath D.O:"
-        image: /img/ben_lobmaier.jpg
-        position: Englisch
-        positionType: Team
-        title: Ben Lobmaier
       - positionType: Team
         body: ""
         title: Daniel Scheiwiller
-        position: Sekundarstufe
+        position: Sekundarstufe, Kampfesspiele Primar-/Sek.stufe
         children:
           - name: Maira
             year: "2007"
@@ -136,16 +136,6 @@ teamGroups:
           - name: Lucie
             year: "2013"
         experience: Sekundarlehrperson, Heilpädagoge
-      - children:
-          - name: Manoah
-            year: "2011"
-          - name: Amon
-            year: "2013"
-        experience: Sportlehrer und Künstler
-        image: /img/daniel_schibli.jpg
-        position: Sporadische Projekte, Bogenschiessen
-        positionType: Team
-        title: Daniel Schibli
       - positionType: Team
         body: ""
         title: Judith Hossli
@@ -160,4 +150,14 @@ teamGroups:
           - name: Celia
             year: "2007"
         image: /img/judith_hossli.png
+      - children:
+          - name: Manoah
+            year: "2011"
+          - name: Amon
+            year: "2013"
+        experience: Sportlehrer und Künstler
+        image: /img/daniel_schibli.jpg
+        position: Sporadische Projekte, Bogenschiessen
+        positionType: Team
+        title: Daniel Schibli
 ---
