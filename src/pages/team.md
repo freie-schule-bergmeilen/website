@@ -146,4 +146,18 @@ teamGroups:
         position: Sporadische Projekte, Bogenschiessen
         positionType: Team
         title: Daniel Schibli
+      - positionType: Team
+        body: ""
+        title: Judith Hossli
+        position: Kochen und Ordnen, "cook´n´coach"
+        experience: "Expertin für Küche und Kinder, lic. phil I, Geschichte(n) und
+          Kommunikation, Visual Design, Integral Coach, Weiterbildungen:
+          Emphatische Kommunikation (GFK), Ganzheitlich Lernen
+          (Montessori-Pädagogik), zert. Legasthenietrainerin"
+        children:
+          - name: Malenka
+            year: "2005"
+          - name: Celia
+            year: "2007"
+        image: /img/judith_hossli.png
 ---
