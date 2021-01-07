@@ -146,7 +146,7 @@ teamGroups:
           (Montessori-Pädagogik), zert. Legasthenietrainerin"
         children:
           - name: Malenka
-            year: "2005"
+            year: "2003"
           - name: Celia
             year: "2007"
         image: /img/judith_hossli.png
