@@ -10,4 +10,6 @@ Liebe Interessenten
 
 Bis Ende Schuljahr (Sommerferien 2021) finden keine Einblicksmorgen statt.
 
-Wir freuen uns, wenn ihr euch per Email oder via Platzanfrage-Formular bei uns meldet, damit wir mit euch Kontakt aufnehmen können.
+Bitte meldet euch per Email oder via Platzanfrage-Formular bei uns, damit wir mit euch Kontakt aufnehmen können.
+
+Herzlichen Dank für euer Verständnis!
