@@ -148,11 +148,6 @@ export default class Nav extends PureComponent {
 
 
             <div style={{ display: 'flex', marginLeft: 25 }}>
-              <a className="navbar-item" href="https://www.facebook.com/Freie-Schule-Bergmeilen-502505593264330/" target="_blank" rel="noopener">
-              <span className="icon">
-                <i className="fa fa-lg fa-facebook-official"/>
-              </span>
-              </a>
               <a
                 className="navbar-item"
                 onClick={this.handleClickAdmin}
