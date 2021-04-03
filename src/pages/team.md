@@ -20,7 +20,7 @@ teamGroups:
           mehrjähriger Erfahrung im praxisnahen Unterrichten von Berufsschülern
           (überbetriebliche Kurse Drogisten)"
         image: /img/karin.jpg
-        position: Stufenleitung Kindergarten/Basisstufe, Schulleitung, Sekretariat
+        position: Stufenleitung Basisstufe und Sekundarstufe, Schulleitung, Sekretariat
         positionType: Schulleitung
         title: Karin Escher
       - children:
@@ -37,7 +37,7 @@ teamGroups:
           Gesundheits-und Bewegungsprojekten in Zusammenarbeit mit Samowar
           Meilen, Kursleiterin Eltern-Kind Tanzen & Singen / Kindertanzen.
         image: /img/martina_kunz.jpg
-        position: Stufenleitung Primar- und Sekundarstufe, Schulleitung
+        position: Stufenleitung Primarstufe, Schulleitung
         positionType: Schulleitung
         title: Martina Kunz Guggenbühl
       - children:
@@ -139,7 +139,7 @@ teamGroups:
       - positionType: Team
         body: ""
         title: Judith Hossli
-        position: Kochen und Ordnen, "cook´n´coach"
+        position: Kochen und Ordnen, "cook´n´coach", Projektleitung Sekundarstufe 2021
         experience: "Expertin für Küche und Kinder, lic. phil I, Geschichte(n) und
           Kommunikation, Visual Design, Integral Coach, Weiterbildungen:
           Emphatische Kommunikation (GFK), Ganzheitlich Lernen
