@@ -11,15 +11,15 @@ carousel:
   - image: /img/20181029_125636.jpg
   - image: /img/20190906_133509.jpg
 ---
-Ab Schuljahr 2019/20 bieten wir eine Sekundarstufe an.
+Unsere Sekundarstufe eignet sich für Jugendliche aus Freilernschulen oder aus freiem Homeschooling, welche es sich gewohnt sind, ihren Tag selber zu strukturieren.
 
-Unsere SekundarschülerInnen lernen frei und selbstbestimmt. Sie werden auf ihrem persönlichen Lernweg und bei der Berufswahl von einem Mentor/einer Mentorin unterstützt.
+Eltern unserer SekundarschülerInnen bringen ihren Kindern viel  Vertrauen entgegen, so dass sie ihren (ur-)eigenen Weg entdecken und ihr Potential entfalten können. Für Quereinsteiger aus Schulen mit stark geführten Strukturen (Volksschule oder Privatschulen mit grösstenteils geführten Angeboten) empfehlen wir unsere Sekundarstufe nicht bzw. nur in Ausnahmefällen.
+
+Unsere SekundarschülerInnen lernen frei und selbstbestimmt. Sie werden auf ihrem persönlichen Lernweg und bei der Berufswahl von uns Erwachsenen unterstützt.
 
 Die Jugendlichen leben Freiheit und Eigenverantwortung. Sie setzen sich intensiv mit sich und der Welt auseinander. Sie lernen in Gemeinschaft und individuell und bekommen den nötigen Freiraum, um ihre Stärken weiter entwickeln zu können.
 
 Die Jugendlichen erhalten Inputs in Form von Projekten, Kursen und Einblicken in die Berufswelt verschiedener Erwachsener.
-
-Unsere Sekundarstufe ist ideal für Jugendliche aus Freilernschulen oder aus freiem Homeschooling. Eltern unserer SekundarschülerInnen bringen ihren Kindern viel  Vertrauen entgegen, so dass sie ihren (ur-)eigenen Weg entdecken und ihr Potential entfalten können.
 
 Während ihrer Schulzeit entwickeln die Jugendlichen Fähigkeiten und Eigenschaften, die für ihren Weg ins Berufsleben wertvoll sind wie z.B. Sozialkompetenz, Teamfähigkeit, Kreatives/Vernetztes Denken und Neugier.
 
