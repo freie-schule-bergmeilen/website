@@ -10,11 +10,11 @@ order: "0"
 
 Für allgemeine Anfragen und alles rund um Basis- und Primarstufe:
 
-**info@freie-schule-bergmeilen.ch**
+**[info@freie-schule-bergmeilen.ch](mailto:info@freie-schule-bergmeilen.ch)**
 
 Für alle Anfragen rund um die Sekundarstufe:
 
-**[sekundar@freie-schule-bergmeilen.ch](mailto:sekundar@freie-schule-bergmeilen.ch)**
+**sekundar@freie-schule-bergmeilen.ch**
 
 ## [](mailto:sekundar@freie-schule-bergmeilen.ch)Telefon/sms
 
