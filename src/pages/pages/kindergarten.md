@@ -27,10 +27,12 @@ Zusätzlich zum Schulhaus und seiner Umgebung, verbringen wir Zeit im Wald, besu
 
 **Unsere Basisstufe ist Mo/Di/Do/Fr von 8:30 bis 16:00 geöffnet.** 
 
-Innerhalb der Öffnungszeiten sind Basisstufenkinder je nach Alter und Entwicklung 15-18h pro Woche oder länger präsent.
+**Die Tagesschulstruktur steht den Basisstufen-Kindern nach gegenseitiger Absprache zwischen Schule und Eltern zur Verfügung.** Grundsätzlichwünschen wir den Kindern einen sanften Einstieg in unsere Schule. 
 
-Ein langsamer Einstieg in die Kindergartenwoche ist nach Absprache mit der Schulleitung möglich.
+Wir möchten bei der Entscheidung, wie lange ein Kind bei uns bleibt, das Wohlbefinden des Kindes in den Mittelpunkt stellen. Natürlich beziehen wir aber auch organisatorische Wünsche seitens der Eltern mit ein.
+
+Innerhalb der Öffnungszeiten sind Basisstufenkinder je nach Alter und Entwicklung 15-18h pro Woche oder länger präsent.
 
 Der Kindergarten kann in zwei oder drei Jahren absolviert werden.
 
-Kinder, die für den Kindergarten bereits angemeldet sind, können diesen nach Absprache (abhängig von Belegung und Kapazität) schon ein halbes Jahr vor ihrem Eintritt an 1-2 Halbtagen pro Woche besuchen.
+Kinder, die für unsere Basisstufe bereits angemeldet sind, können diesen nach Absprache (abhängig von Belegung und Kapazität) schon ein halbes Jahr vor ihrem Eintritt an 1-2 Halbtagen pro Woche besuchen.
